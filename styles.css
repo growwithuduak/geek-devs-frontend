@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+body{
+    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    /* min-height: 100vh; */
+}
+
+.main{
+    background: rgb(247, 48, 157);
+    width: 30%;
+    height: 65vh;
+    margin-top: 80px;
+    padding: 30px;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 5200px){
+    .main{
+        width: 50%;
+        height: 70vh;
+
+    }
+}
+
+
+h1{
+    margin: 40px;
+    text-align: center;
+}
+
+input{
+    background-color: rgb(210, 223, 210);
+    border: none;
+    width: 50%;
+    height: 35px;
+    padding: 5px;
+    margin: 0 5px 5px 20px;
+}
+
+.addList{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+button{
+    background: rgb(120, 14, 251);
+    border-radius: 20px;
+    width: 130px;
+    height: 35px;
+    color: white;
+    border: none;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nameList{
+    width: 95%;
+    height: 30vh;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.555) ;
+    background: white;
+    margin-top: 25px;
+    min-width: 70%;
+
+}
+
+ol {
+    margin: 25px;
+    font-weight: lighter;
+    padding: 5px;
+    
+}
