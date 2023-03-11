@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border-style: none;
+}
+
+:root {
+    --pink-color: rgb(240, 102, 178);
+    --white-color: #eff7f6;
+    --blue-color: rgb(98, 98, 207);
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-color: var(--white-color);
+    font-family: "Fresca", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.container {
+    background-color: var(--pink-color);
+    padding: 15px;
+    text-align: center;
+}
+
+#name-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    height: 26px;
+}
+
+
+#name-form input[type="text"] {
+    width: 60%;
+    background-color: #e0dada;
+}
+
+#name-form input[type="button"] {
+    width: 20%;
+    background: var(--blue-color);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.name-list {
+    background-color: var(--white-color);
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+}
