@@ -10,7 +10,7 @@ function addToList() {
     li.innerHTML = addToInputList.value;
 
     if (!li.innerHTML) {
-        console.error('Enter the name of any woman you know!')
+        console.warn('Input text field cannot be empty');
     }
     else {
         ol.appendChild(li);
