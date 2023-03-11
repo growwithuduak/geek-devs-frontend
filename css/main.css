@@ -81,4 +81,7 @@ section.output #outputList {
   border-radius: 15px;
   height: 40vh;
   margin-top: 6px;
+}
+section.output #ordered-list {
+  padding-top: 8px;
 }/*# sourceMappingURL=main.css.map */
