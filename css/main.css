@@ -1,0 +1,84 @@
+/* Define standard variables and values for website */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-color: #f226f2;
+}
+
+.page-header {
+  border: none;
+  margin-top: 25%;
+  size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  font-size-adjust: center;
+  font-weight: bolder;
+  block-size: 100%;
+}
+
+.first-header {
+  padding-top: 1%;
+  border: none;
+}
+.first-header h1 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-size: larger;
+  letter-spacing: normal;
+}
+
+section.input {
+  width: 100%;
+}
+section.input #addName {
+  -webkit-text-size-adjust: 4%;
+     -moz-text-size-adjust: 4%;
+          text-size-adjust: 4%;
+}
+section.input #addNameToList {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  text-decoration-color: rgb(235, 247, 255);
+  -webkit-text-size-adjust: 4%;
+     -moz-text-size-adjust: 4%;
+          text-size-adjust: 4%;
+  text-transform: uppercase;
+}
+section.input input[type=text] {
+  width: 83%;
+  height: 7px;
+  background: rgba(236, 227, 227, 0.8784313725);
+  padding: 5px;
+  font: 100 16px/1.5 "Roboto", sans-serif;
+  transition: border 0.3s linear;
+  vertical-align: middle;
+  line-height: 18px;
+}
+section.input button {
+  vertical-align: middle;
+  line-height: 8px;
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #1d31e9;
+  color: white;
+}
+
+section.output {
+  display: flexbox;
+  padding-top: 6%;
+}
+section.output .output-header {
+  text-align: center;
+  font-weight: bold;
+}
+section.output #outputList {
+  background-color: white;
+  border-radius: 15px;
+  height: 40vh;
+  margin-top: 6px;
+}/*# sourceMappingURL=main.css.map */
