@@ -45,6 +45,7 @@ input{
     height: 35px;
     padding: 5px;
     margin: 0 5px 5px 20px;
+    font-size: 20px;
 }
 
 .addList{
@@ -61,6 +62,7 @@ button{
     height: 35px;
     color: white;
     border: none;
+    font-size: 20px;
 }
 
 h2{
@@ -77,12 +79,18 @@ h2{
     background: white;
     margin-top: 25px;
     min-width: 70%;
+    font-size: 20px;
 
 }
 
 ol {
-    margin: 25px;
+    margin: 0 5px 5px 25px;
     font-weight: lighter;
     padding: 5px;
+    
+}
+
+li{
+    margin-top: 10px;
     
 }
