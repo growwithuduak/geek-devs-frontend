@@ -1,5 +1,5 @@
 /* Define standard variables and values for website */
-$bgcolor: #f226f2;
+$bgcolor: #ff4dff;
 $centralized: center;
 $font-family: 'Georgia';
 
@@ -15,7 +15,7 @@ body {
 .page-header {
     border: none;
     margin-top: 25%;
-    size-adjust: 100%;
+    size-adjust: 190%;
     text-size-adjust: 100%;
     font-size-adjust: $centralized;
     font-weight: bolder;
@@ -25,16 +25,20 @@ body {
 .first-header {
     padding-top: 1%;
     border: none;
+    width: 480px;
+    padding-bottom: 40px;
     h1 {
         font-family: $font-family;
         font-style: normal;
-        font-size: larger;
+        font-size: 23px;
         letter-spacing: normal;
+        width: 480px;
     }
 }
 
 section.input {
-    width: 100%;
+    height: 50px;
+    width: 440px;
 
     #addName {
         text-size-adjust: 4%;
@@ -58,6 +62,8 @@ section.input {
         transition: border 0.3s linear;
         vertical-align: middle;
         line-height: 18px;
+        height: 20px;
+        width: 280px;
         
     
       }
@@ -71,6 +77,9 @@ section.input {
         cursor: pointer;
         background-color: #1d31e9;
         color: white;
+        height: 30px;
+        width: 100px;
+        margin-left: 20px;
     }
 }
 
@@ -93,6 +102,8 @@ section.output {
 
     #ordered-list {
         padding-top: 8px;
+        font-weight: lighter;
+        color: #52527a;
 
     }
 }

@@ -4,13 +4,13 @@ body {
   align-items: center;
   justify-content: center;
   height: 70vh;
-  background-color: #f226f2;
+  background-color: #ff4dff;
 }
 
 .page-header {
   border: none;
   margin-top: 25%;
-  size-adjust: 100%;
+  size-adjust: 190%;
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
           text-size-adjust: 100%;
@@ -22,16 +22,20 @@ body {
 .first-header {
   padding-top: 1%;
   border: none;
+  width: 480px;
+  padding-bottom: 40px;
 }
 .first-header h1 {
   font-family: "Georgia";
   font-style: normal;
-  font-size: larger;
+  font-size: 23px;
   letter-spacing: normal;
+  width: 480px;
 }
 
 section.input {
-  width: 100%;
+  height: 50px;
+  width: 440px;
 }
 section.input #addName {
   -webkit-text-size-adjust: 4%;
@@ -56,6 +60,8 @@ section.input input[type=text] {
   transition: border 0.3s linear;
   vertical-align: middle;
   line-height: 18px;
+  height: 20px;
+  width: 280px;
 }
 section.input button {
   vertical-align: middle;
@@ -66,6 +72,9 @@ section.input button {
   cursor: pointer;
   background-color: #1d31e9;
   color: white;
+  height: 30px;
+  width: 100px;
+  margin-left: 20px;
 }
 
 section.output {
@@ -85,4 +94,6 @@ section.output #outputList {
 }
 section.output #ordered-list {
   padding-top: 8px;
+  font-weight: lighter;
+  color: #52527a;
 }/*# sourceMappingURL=main.css.map */
