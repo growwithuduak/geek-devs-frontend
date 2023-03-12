@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600&display=swap');
+
+* {
+    --font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo', sans-serif;
+    --bg:#ff66c4;
+    --input-bg:#d9d9d9;
+    --btn:#5e17eb;
+}
+
+body{
+    background-color: var(--bg);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+}
+
+.wrapper{
+    flex-grow: inherit;
+    margin-top: 2rem;
+}
+
+.sect{
+    margin-top: 2rem;
+}
+
+h1{
+    line-height: .8;
+    /* for media queries */
+    font-size: clamp(2em, 3vw, 2.5rem);
+}
+
+h3{
+    line-height: .5;
+    font-size: clamp(1.05em, 1.5vw, 1.5rem);
+    text-align: center;
+}
+
+#add-btn{
+    border: 0px transparent;
+    padding: 8px 10px;
+    width: 125px;
+    height: auto;
+    font-size: .95em;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color:var(--btn);
+    transition: all 200ms linear;
+    line-height: 1.2;
+    cursor: pointer;
+    margin-left: 1em;
+    }
+
+    #add-btn:hover {
+        color: var(--btn);
+        background-color: var(--input-bg);
+      }  
+      
+
+input{
+  padding:10px;
+  width:auto;
+  background-color: var(--input-bg);
+  max-width:325px;
+  height:auto;
+  border:none;
+  text-align:center;
+  -webkit-transition:0.2s ease all;
+     -moz-transition:0.2s ease all;
+      -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+          transition:0.2s ease all;
+}
+
+::placeholder {
+    text-align: left;
+    color: black;
+}
+
+#box{
+    border:.5px solid black;
+    border-radius: 25px;
+    width:28.78em;
+    height:21.78em;
+    overflow:auto;
+    background-color: white;
+    text-align: left;
+    font-size: .8rem;
+    padding: 20px 30px;
+
+}
+      
