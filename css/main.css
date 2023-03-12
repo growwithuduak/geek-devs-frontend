@@ -91,6 +91,7 @@ section.output #outputList {
   height: 40vh;
   margin-top: 6px;
   overflow: auto;
+  width: 440px;
 }
 section.output #ordered-list {
   padding-top: 8px;
