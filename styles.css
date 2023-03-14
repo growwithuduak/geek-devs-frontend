@@ -1,43 +1,35 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Merriweather:wght@300;700&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Lora&family=Merriweather:wght@300;700&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400&family=Ubuntu:wght@700&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
+    font-family: "Lora", serif;
 }
 
 body{
     align-items: center;
    display: flex;
    justify-content: center;
-   align-items: center;
     /* min-height: 100vh; */
 }
 
 .main{
     background: rgb(247, 48, 157);
-    width: 30%;
-    height: 65vh;
-    margin-top: 80px;
-    padding: 30px;
+    width: 50em;
+    height: 65%;
+    margin-top: 8em;
+    padding: 2em;
     align-items: center;
+   
 
-}
-
-@media screen and (min-width: 5200px){
-    .main{
-        width: 50%;
-        height: 70vh;
-
-    }
 }
 
 
 h1{
-    margin: 40px;
+    margin: 2em;
     text-align: center;
 }
 
@@ -74,22 +66,22 @@ h2{
 }
 
 .nameList{
-    width: 95%;
-    height: 30vh;
-    margin-left: 10px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.555) ;
+    width: 90%;
+    height: 10em;
+    margin-left: 1em;
+    border-radius: 1em;
+    border: .15em rgba(14, 13, 13, 0.555)  solid;
     background: white;
-    margin-top: 25px;
-    min-width: 70%;
-    font-size: 20px;
+    margin-top: 1em;
+    /* min-width: 70%; */
+    font-size: 1.5rem;
 
 }
 
 ol {
     margin: 0 5px 5px 25px;
     font-weight: lighter;
-    padding: 5px;
+    padding: 1em;
     
 }
 
