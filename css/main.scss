@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Poppins:wght@200;300;700&display=swap');
+
+body{
+    background-color: rgb(201, 50, 204);
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.header{
+    text-align: center;
+    margin-top: 7em;
+}
+
+
+#add-women-cta input{
+    background-color: rgb(238, 231, 231);
+    border-radius: 1px;
+    width: 25%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 30em;
+    margin-bottom: 5em;
+}
+
+#add-women-cta button{
+    position: relative;
+    width: 10%;
+    height: 45px;
+    border: none;
+    border-radius: 2em;
+    background-color: rgb(66, 66, 231);
+    color: white;
+    cursor: pointer;
+}
+
+.awesome-women{
+    text-align: center;
+}
+
+#added {
+    width: 30%;
+    height: 340px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    border-radius: 2em;
+    padding-top: 2em;
+}
