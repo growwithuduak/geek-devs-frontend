@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy International Women's Day</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="main-body">
+
+        <div class="hero-section">
+    
+            <div class="header">
+                <h1>Happy International Women's Day</h1>
+            </div>
+    
+        </div>
+    
+        <section class="container">
+            <div id="add-women-cta">
+                <input type="text" id="name-added-cta" placeholder="Enter name of any woman you know">
+                <button onclick="pushName()">ADD</button>
+            </div>
+        </section>
+    
+        <section class="awesome-women">
+            <h2>List of Awesome Women I Know</h2>
+        </section>
+
+            <ol  id="added"> </ol>
+    </div>
+
+    <script>
+
+        function pushName() {
+
+            const inputVal = document.getElementById('name-added-cta').value
+            const newList = document.getElementById('added')
+            var inputText = document.createElement('li')
+            var node = document.createTextNode(inputVal);
+
+            inputText.appendChild(node)
+            newList.appendChild(inputText)
+        }
+
+    </script>
+</body>
+</html>
