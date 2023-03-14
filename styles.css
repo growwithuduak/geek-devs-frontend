@@ -36,7 +36,7 @@ h1{
 input{
     background-color: rgb(210, 223, 210);
     border: none;
-    width: 50%;
+    width: 20em;
     height: 35px;
     padding: 5px;
     margin: 0 5px 5px 20px;
@@ -88,4 +88,11 @@ ol {
 li{
     margin-top: 10px;
     
+}
+
+@media (max-width: 700px){
+    .addList{
+        flex-direction: column;
+        align-items: center;
+    }
 }
