@@ -15,7 +15,7 @@ function addToList() {
     else {
         ol.appendChild(li);
         ol.appendChild(paragraph);
-        
+        addToInputList.value = "";
     }
 };
 
