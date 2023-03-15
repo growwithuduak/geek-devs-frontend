@@ -1,15 +1,17 @@
 /* Define standard variables and values for website */
-$bgcolor: #ff4dff;
-$centralized: center;
-$font-family: 'Georgia';
+:root {
+    --main-bg-color: #ff4dff;
+    --centralized-justify: center;
+    --default-font-family: 'Georgia';
+}
 
 
 body {
     display: flex;
-    align-items: $centralized;
-    justify-content: $centralized;
+    align-items: var(--centralized-justify);
+    justify-content: var(--centralized-justify);
     height: 70vh;
-    background-color: $bgcolor;
+    background-color: var(--main-bg-color);
 }
 
 .page-header {
@@ -17,7 +19,7 @@ body {
     margin-top: 25%;
     size-adjust: 190%;
     text-size-adjust: 100%;
-    font-size-adjust: $centralized;
+    font-size-adjust: var(--centralized-justify);
     font-weight: bolder;
     block-size: 100%;
 }
@@ -28,7 +30,7 @@ body {
     width: 480px;
     padding-bottom: 40px;
     h1 {
-        font-family: $font-family;
+        font-family: var(--default-font-family);
         font-style: normal;
         font-size: 23px;
         letter-spacing: normal;
@@ -74,7 +76,6 @@ section.input {
         padding: 6px;
         border: none;
         border-radius: 8px;
-        cursor: pointer;
         background-color: #1d31e9;
         color: white;
         height: 30px;
@@ -89,7 +90,7 @@ section.output {
 
 
     .output-header {
-        text-align: $centralized;
+        text-align: var(--centralized-justify);
         font-weight: bold;
 }
     #outputList {
@@ -105,6 +106,5 @@ section.output {
         padding-top: 8px;
         font-weight: lighter;
         color: #52527a;
-
     }
 }

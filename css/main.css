@@ -1,10 +1,16 @@
 /* Define standard variables and values for website */
+:root {
+  --main-bg-color: #ff4dff;
+  --centralized-justify: center;
+  --default-font-family: "Georgia";
+}
+
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: var(--centralized-justify);
+  justify-content: var(--centralized-justify);
   height: 70vh;
-  background-color: #ff4dff;
+  background-color: var(--main-bg-color);
 }
 
 .page-header {
@@ -14,7 +20,7 @@ body {
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
           text-size-adjust: 100%;
-  font-size-adjust: center;
+  font-size-adjust: var(--centralized-justify);
   font-weight: bolder;
   block-size: 100%;
 }
@@ -26,7 +32,7 @@ body {
   padding-bottom: 40px;
 }
 .first-header h1 {
-  font-family: "Georgia";
+  font-family: var(--default-font-family);
   font-style: normal;
   font-size: 23px;
   letter-spacing: normal;
@@ -69,7 +75,6 @@ section.input button {
   padding: 6px;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
   background-color: #1d31e9;
   color: white;
   height: 30px;
@@ -82,7 +87,7 @@ section.output {
   padding-top: 6%;
 }
 section.output .output-header {
-  text-align: center;
+  text-align: var(--centralized-justify);
   font-weight: bold;
 }
 section.output #outputList {

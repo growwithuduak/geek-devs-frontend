@@ -1,21 +1,20 @@
-const addToInputList = document.querySelector("#addName");
-const addButton = document.querySelector("#addNameToList");
-const addToOutputList = document.querySelector("#outputList");
+const addToInputList = document.getElementById("addName");
+const addButton = document.getElementById("addNameToList");
+const addToOutputList = document.getElementById("ordered-list");
 
 // Function to append 
-function addToList() {
-    const ol = addToOutputList.querySelector("ol");
+const addToList = () => {
     const li = document.createElement("li");
     const paragraph = document.createElement("p");
 
     li.innerHTML = addToInputList.value;
 
     if (!li.innerHTML) {
-        console.warn('Input text field cannot be empty');
+        alert('Input text field cannot be empty!');
     }
     else {
-        ol.appendChild(li);
-        ol.appendChild(paragraph);
+        addToOutputList.appendChild(li);
+        addToOutputList.appendChild(paragraph);
         addToInputList.value = "";
     }
 };
@@ -29,7 +28,7 @@ addButton.addEventListener("click", () => {
 
 // Execute when the user presses Enter key on the keyboard
 addToInputList.addEventListener("keypress", (event) => {
-    if (event.keyCode === 13) {
+    if (event.key === 'Enter') {
         event.preventDefault();
         addToList();
     }
