@@ -20,7 +20,7 @@
     
         <section class="container">
             <div class="add-women" id="add-women-cta">
-                <input type="text" id="name-added-cta" placeholder="Enter name of any woman you know">
+                <input type="text" onfocus="this.value=''" id="name-added-cta" placeholder="Enter name of any woman you know">
                 <button onclick="pushName()">ADD</button>
             </div>
         </section>
@@ -47,6 +47,7 @@
                 inputText.appendChild(node)
                 newList.appendChild(inputText)
             }
+
         }
 
     </script>
