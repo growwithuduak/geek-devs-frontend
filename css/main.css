@@ -8,7 +8,7 @@ body {
 
 .header {
   text-align: center;
-  margin-top: 7em;
+  margin-top: 7rem;
 }
 
 .add-women input {
@@ -18,10 +18,10 @@ body {
   height: 45px;
   font-size: 15px;
   border: 2px;
-  margin-top: 2em;
-  margin-right: 2em;
-  margin-left: 30em;
-  margin-bottom: 5em;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-left: 30rem;
+  margin-bottom: 5rem;
 }
 
 .add-women button {
@@ -45,5 +45,5 @@ body {
   display: block;
   margin: auto;
   border-radius: 2em;
-  padding-top: 2em;
+  padding-top: 2rem;
 }/*# sourceMappingURL=main.css.map */
