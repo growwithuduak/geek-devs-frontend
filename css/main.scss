@@ -13,7 +13,7 @@ body{
 }
 
 
-#add-women-cta input{
+.add-women input{
     background-color: rgb(238, 231, 231);
     border-radius: 1px;
     width: 25%;
@@ -26,7 +26,7 @@ body{
     margin-bottom: 5em;
 }
 
-#add-women-cta button{
+.add-women button{
     position: relative;
     width: 10%;
     height: 45px;
@@ -41,7 +41,7 @@ body{
     text-align: center;
 }
 
-#added {
+.added {
     width: 30%;
     height: 340px;
     background-color: white;
