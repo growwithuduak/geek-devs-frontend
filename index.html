@@ -41,8 +41,12 @@
             const inputText = document.createElement('li')
             const node = document.createTextNode(inputVal);
 
-            inputText.appendChild(node)
-            newList.appendChild(inputText)
+            if(inputVal.length == 0){
+                alert("Please enter a name!")
+            }else{
+                inputText.appendChild(node)
+                newList.appendChild(inputText)
+            }
         }
 
     </script>
