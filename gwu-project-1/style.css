@@ -11,7 +11,6 @@
 }
 
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     height: 100%;
     margin: auto;
@@ -25,6 +24,7 @@ body {
     background-color: var(--pink-color);
     padding: 15px;
     text-align: center;
+    position: relative;
 }
 
 #name-form {
@@ -57,4 +57,21 @@ body {
     margin: 10px auto;
     width: 80%;
     border-radius: 10px;
+}
+
+.notice {
+    display: none;
+    top: 10px;
+    left: 80px;
+    background-color: #ee3d3d;
+    color: var(--white-color);
+    position: absolute;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+    .notice {
+        left: 40%
+    }
 }
