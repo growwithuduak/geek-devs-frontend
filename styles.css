@@ -5,6 +5,7 @@
     font-family: 'Archivo', sans-serif;
     --bg:#ff66c4;
     --input-bg:#d9d9d9;
+    --grey: #888888;
     --btn:#5e17eb;
 }
 
@@ -44,6 +45,17 @@ h3{
     text-align: center;
 }
 
+li {
+    font-family: var(--font-family);
+    font-size: 12.5px;
+    margin-bottom: 13.5px;
+  }
+  
+  /* to create margin between the data and the list*/
+  li::marker {
+    margin-right: 10px;
+  }
+
 #add-btn{
     border: 0px transparent;
     padding: 8px 10px;
@@ -60,10 +72,10 @@ h3{
     margin-left: 1em;
     }
 
-    #add-btn:hover {
-        color: var(--btn);
-        background-color: var(--input-bg);
-      }  
+    #add-btn:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
       
 
 input{
@@ -71,23 +83,17 @@ input{
   width:auto;
   background-color: var(--input-bg);
   max-width:325px;
-  height:auto;
   border:none;
-  text-align:center;
-  -webkit-transition:0.2s ease all;
-     -moz-transition:0.2s ease all;
-      -ms-transition:0.2s ease all;
-       -o-transition:0.2s ease all;
-          transition:0.2s ease all;
+  
 }
 
 ::placeholder {
     text-align: left;
-    color: black;
+    color: var(--grey);
 }
 
 #box{
-    border:.5px solid black;
+    border:.5px solid rgb(129, 129, 129);
     border-radius: 25px;
     width:28.78em;
     height:21.78em;
@@ -95,7 +101,7 @@ input{
     background-color: white;
     text-align: left;
     font-size: .8rem;
-    padding: 20px 30px;
+    padding: 20px 10px;
 
 }
       
