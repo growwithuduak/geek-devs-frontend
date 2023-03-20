@@ -36,7 +36,6 @@ function showNames() {
   inputNames.appendChild(listNames);
 }
 
-
 //for accessibility
 inputField.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
