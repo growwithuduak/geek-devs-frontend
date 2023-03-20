@@ -8,14 +8,8 @@ inputField.addEventListener('input', function() {
   addBtn.disabled = inputField.value.trim() === '';
 });
 
-addBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  if (inputField.value.trim() === '') {
-    alert('Please enter a name');
-    return;
-  }
-  console.log('Haha! You added a name')
-  namesArray.push(inputField.value.trim());
+addBtn.addEventListener('click', function(addName) {
+  namesArray.push(inputField.value.trim(addName));
   inputField.value = '';
   addBtn.disabled = true;
 
@@ -39,7 +33,6 @@ function showNames() {
 //for accessibility
 inputField.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
-    event.preventDefault();
     document.getElementById("add-btn").click();
   }
 });
