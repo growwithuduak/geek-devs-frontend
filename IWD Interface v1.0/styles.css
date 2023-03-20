@@ -7,6 +7,7 @@
     --input-bg:#d9d9d9;
     --grey: #888888;
     --btn:#5e17eb;
+    --white: #fff;
 }
 
 body{
@@ -14,6 +15,7 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 .container{
@@ -25,23 +27,31 @@ body{
 }
 
 .wrapper{
-    flex-grow: inherit;
+    display: flex;
+    flex-direction: row;
     margin-top: 2rem;
 }
 
 .sect{
     margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1{
     line-height: .8;
     /* for media queries */
-    font-size: clamp(2em, 3vw, 2.5rem);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    text-align: center;
+    line-height: 1;
 }
 
 h3{
     line-height: .5;
-    font-size: clamp(1.05em, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     text-align: center;
 }
 
@@ -60,29 +70,27 @@ li {
     border: 0px transparent;
     padding: 8px 10px;
     width: 125px;
-    height: auto;
-    font-size: .95em;
+    font-size: 1rem;
     border-radius: 20px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
     background-color:var(--btn);
-    transition: all 200ms linear;
     line-height: 1.2;
     cursor: pointer;
-    margin-left: 1em;
+    margin-left: 0.85rem;
     }
 
     #add-btn:disabled{
     opacity: 0.5;
     cursor: not-allowed;
-  }
-      
+  }  
 
 input{
   padding:10px;
   width:auto;
   background-color: var(--input-bg);
-  max-width:325px;
+  max-width:250px;
+  min-width: 170px;
   border:none;
   
 }
@@ -95,13 +103,12 @@ input{
 #box{
     border:.5px solid rgb(129, 129, 129);
     border-radius: 25px;
-    width:28.78em;
-    height:21.78em;
+    width: 31.75%;
+    height:17.5rem;
     overflow:auto;
-    background-color: white;
+    background-color: var(--white);
     text-align: left;
     font-size: .8rem;
     padding: 20px 10px;
 
 }
-      
