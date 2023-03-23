@@ -9,10 +9,14 @@ const monthlyPay = (employeeType, salesPerMonth) => {
         employeeSalary = (0.4 * salesPerMonth);
         return employeeSalary;
     } else {
-        console.log("nothing")
+        console.log("You have not entered employee ")
     }
 }
 
 let d = monthlyPay("commissioned", 427000)
+let a = monthlyPay("salaried", 427000)
+let b = monthlyPay("contract", 427000)
 
 console.log(d);
+console.log(a);
+console.log(b)
