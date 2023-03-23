@@ -1,22 +1,26 @@
-const monthlyPay = (employeeType, salesPerMonth) => {
-    if (employeeType === "salaried") {
-        employeeSalary = 150000
-        return employeeSalary;
-    } else if (employeeType === "commissioned") {
-        employeeSalary = ((80000) + (0.085 * salesPerMonth))
-        return employeeSalary;
-    } else if (employeeType === "contract") {
-        employeeSalary = (0.4 * salesPerMonth);
-        return employeeSalary;
+const calcMonthlyPay = (employeeType, salesPerMonth) => {
+
+    let baseSalary = 150000
+
+    if (employeeType === "contract" || employeeType === "commisioned" ) {
+        checkEmployeeSalary()
+    } else if (employeeType === "salaried") {
+        return `${baseSalary}`;
     } else {
-        console.log("You have not entered employee ")
+        console.log("You have not entered the employee type")
+    }
+};
+
+const checkEmployeeSalary = () => {
+    let salesPerMonth;
+    if ("contract") {
+        const calcContract = (0.4 * salesPerMonth);
+        return calcContract;
+    } else {
+        const calcCommision = ((80000) + (0.085 * salesPerMonth));
+        return calcCommision;
     }
 }
 
-let d = monthlyPay("commissioned", 427000)
-let a = monthlyPay("salaried", 427000)
-let b = monthlyPay("contract", 427000)
-
-console.log(d);
-console.log(a);
-console.log(b)
+console.log(calcMonthlyPay("salaried"))
+    
