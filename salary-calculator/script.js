@@ -1,26 +1,33 @@
 const calcMonthlyPay = (employeeType, salesPerMonth) => {
 
-    let baseSalary = 150000
+    const baseSalary = 150000
 
-    if (employeeType === "contract" || employeeType === "commisioned" ) {
+    if ((employeeType === "contract" || employeeType === "commissioned") ) {
         checkEmployeeSalary()
     } else if (employeeType === "salaried") {
-        return `${baseSalary}`;
+        return `$${baseSalary}`;
     } else {
         console.log("You have not entered the employee type")
     }
 };
 
 const checkEmployeeSalary = () => {
+
     let salesPerMonth;
+
     if ("contract") {
         const calcContract = (0.4 * salesPerMonth);
-        return calcContract;
+        return `$${calcContract}`;
     } else {
         const calcCommision = ((80000) + (0.085 * salesPerMonth));
-        return calcCommision;
+        return `$${calcCommision}`;
     }
 }
 
 console.log(calcMonthlyPay("salaried"))
+console.log(calcMonthlyPay("contract", 200000))
+console.log(calcMonthlyPay("commissioned", 200000))
+console.log(calcMonthlyPay("newSalary"))
+
+// write code that diables the console from displaying "undefined"
     
