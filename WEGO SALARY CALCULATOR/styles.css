@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap');
+
+* {
+    --font-family: 'Mulish', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    --white: #fff;
+    --btn-bg: #191919;
+}
+
+body{
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+  
+select {
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#salesPerMonth{
+    display: none;
+}
+
+
+#showSalary{
+    display: none;
+    margin-top: 20px;
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
+}
+
+input{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--btn-bg);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    min-width: 125px;
+  }
+  
+  button:hover {
+    background-color: var(--white);
+    color: var(--btn-bg);
+    border: 1px solid var(--btn-bg);
+  }
+
+h1 {
+    letter-spacing: 3px;
+    font-size: 3rem;
+    text-align: center;
+}
