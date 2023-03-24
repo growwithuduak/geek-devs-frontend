@@ -28,6 +28,8 @@ select.addEventListener ('change', ()=> {
         commisionedContracted.classList.add('sales')
         contracted();
         Input.value = ""
+    } else {
+        commisionedContracted.classList.remove('sales')
     }
     
 })
