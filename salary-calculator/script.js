@@ -1,6 +1,5 @@
 const calcMonthlyPay = (employeeType, salesPerMonth) => {
-    
-    let salesPerMonth;
+
     const baseSalary = 150000
 
     if (employeeType === "contract" || employeeType === "commissioned") {
@@ -15,8 +14,9 @@ const calcMonthlyPay = (employeeType, salesPerMonth) => {
 };
 
 const checkEmployeeSalary = (salesEarned) => {
-    if ("contract") {
-        const calcContract = (0.4 * salesEarned);
+
+    if ("contract") {   
+        const calcContract = (0.4 * salesEarned); 
         return `$${calcContract}`;
     } else if ("commissioned") {
         const calcCommision = ((80000) + (0.085 * salesEarned));
