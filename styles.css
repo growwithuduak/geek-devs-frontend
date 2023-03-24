@@ -1,7 +1,7 @@
 div {
    background: rgb(72, 74, 101);
-   width: 50%;
-   height: 50em;
+   width: 40%;
+   height: 45em;
    margin: 15em;
    padding: 10px;
    text-align: center;
@@ -57,7 +57,7 @@ input{
 
 button{
     padding: 15px;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 select{
@@ -68,9 +68,81 @@ select{
 }
 
 p{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
-@media (max-width:g600px){
+@media (max-width: 1000px){
+    div {
+        background: rgb(72, 74, 101);
+        width: 30em;
+        height: 35em;
+        margin: auto;
+        padding: 5px;
+        
+        border: 8px rgb(13, 63, 202) solid;
+     }
+     
+      nav {
+         margin: 10px; 
+         border: 1px white solid;
+         border-width: .2em;
+         width: 3em;
+         height: 4em;
+         
+     }
+     
+     h1{
+         margin-bottom: 0;
+         color: #fff;
+         font-size: 2rem;
+         
+         
+     
+     }
+     
+     .sub-text {
+         margin-top: .5em;
+         font-size: 1rem;
+         color: #fff;
+     }
 
+     select{
+        width: 40%;
+        font-size: 15px;
+    }
+     
+     h3{
+        font-size: 2rem;
+        color: #fff;
+     }
+     
+     .contracted-commisioned{
+         
+         display: none;
+     
+       
+     }
+     
+     .contracted-commisioned.sales {
+         display: flex;
+         justify-content: center;
+         gap: 1em;
+     
+     } 
+     
+     input{
+         height: 2em;
+         font-size: 1.5rem;
+     }
+     
+     button{
+         padding: 10px;
+         font-size: 1rem;
+     }
+     
+   
+     
+     p{
+         font-size: 2rem;
+     }
 }

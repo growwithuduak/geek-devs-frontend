@@ -15,36 +15,44 @@ select.addEventListener ('change', ()=> {
     if(select.value == "Salaried") {
         commisionedContracted.classList.remove('sales')
         salaried();
+
+
     } else if (select.value == "commisioned") {
+        Total.innerHTML = "";
         commisionedContracted.classList.add('sales')
         commission();
-    } else {
+        Input.value = "";
+
+    } else if (select.value == "contract") {
+        Total.innerHTML = "";
         commisionedContracted.classList.add('sales')
         contracted();
+        Input.value = ""
     }
     
 })
 
 salaried = () => {
-    Total.innerText += 'Your monthly pay is:  150,000';
-   
+    Total.innerText = 'Your monthly pay is:  150,000';
 }
 
 
 commission = () => {
     btn.addEventListener('click', function() {
-        let commissionedSales = Input.value * 0.085;
-        let commissionedSalary = 80000 + commissionedSales;
-        Total.innerText += 'Your monthly pay is: ' + commissionedSalary;
+        
+        let salesPerMonth = Input.value * 0.085;
+        let commissionedSalary = 80000 + salesPerMonth;
+        Total.innerText = 'Your monthly pay is: ' + commissionedSalary;
         commisionedContracted.classList.remove('sales')
+       
     })
     
 }
 
 contracted = () => {
     btn.addEventListener('click', function() {
-        let contractedSales = Input.value * 0.4;
-        Total.innerText += 'Your monthly pay is: ' + contractedSales;
+        let salesPerMonth = Input.value * 0.4;
+        Total.innerText = 'Your monthly pay is: ' + salesPerMonth;
         commisionedContracted.classList.remove('sales')
     })
     
