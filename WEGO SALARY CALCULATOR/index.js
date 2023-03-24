@@ -1,15 +1,11 @@
-function showEmployeeTypes() {
+const showEmployeeTypes = () => {
     const employeeType = document.getElementById("employeeType").value;
     const salesPerMonthDiv = document.getElementById("salesPerMonth");
   
-    if (employeeType === "SALARIED") {
-      salesPerMonthDiv.style.display = "none";
-    } else {
-      salesPerMonthDiv.style.display = "block";
-    }
+    employeeType === "SALARIED" ? salesPerMonthDiv.style.display = "none" : salesPerMonthDiv.style.display = "block";
   }
   
-  function calculateSalary() {
+  const calculateSalary = () => {
     const employeeType = document.getElementById("employeeType").value;
     const salesPerMonth = Number(document.getElementById("sales").value);
     let salary = 0;
@@ -29,7 +25,7 @@ function showEmployeeTypes() {
     showData.style.display = "block";
   }
   
-  function resetData() {
+  const resetData = () => {
     document.getElementById("employeeType").value = "";
     document.getElementById("sales").value = "";
     document.getElementById("showSalary").style.display = "none";
