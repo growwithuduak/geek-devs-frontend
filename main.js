@@ -1,21 +1,26 @@
-let inputvalue = document.querySelector("#input_field");
-let addbtn = document.querySelector("#submit_btn");
-let displayname = document.querySelector(".taskList");
+function calculateEmployeeMonthlySalary (employeeType, salesPerMonth) {
+    const baseSalaryForSalaried = 150000;
+    const baseSalaryForCommissioned = 80000;
+    const commissionRate = 0.085; // 8.5/100 
+    const contractRate = 0.4; // 40/100 
 
-let nameList=[]
-let li=document.createElement("li");
-
-addbtn.addEventListener("click", (e)=> {
-      e.preventDefault();
-      nameList.push( inputvalue.value);
-      let list = "";
-      for (let index = 0; index < nameList.length; index++) {
-      list += `<li>${nameList[index]}</li>`;
-     
+    switch (employeeType) {
+        case "SALARIED":
+            monthlyPay = 150000;
+            break;
+        
+        case "COMMISSIONED":
+            monthlyPay = baseSalaryForCommissioned + (salesPerMonth * commissionRate);
+            break;
+        
+        case "CONTRACT":
+            monthlyPay = salesPerMonth * contractRate;
+            break
+        
+        default:
+            console.log("Invalid employee type");
+            monthlyPay=0;
+            break;
+    }
+        return monthlyPay;
 }
-
-      displayname.innerHTML = list;
-      inputvalue.value = "";
-
-})
-
