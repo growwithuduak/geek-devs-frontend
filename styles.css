@@ -1,0 +1,76 @@
+div {
+   background: rgb(72, 74, 101);
+   width: 50%;
+   height: 50em;
+   margin: 15em;
+   padding: 10px;
+   text-align: center;
+   border: 8px rgb(13, 63, 202) solid;
+}
+
+nav {
+    margin: 25px;
+    font-size: 2rem; 
+    border: 1px white solid;
+    border-width: .2em;
+    width: 5em;
+    height: 6em;
+    
+}
+h1{
+    margin-bottom: 0;
+    color: #fff;
+    
+    
+
+}
+
+.sub-text {
+    margin-top: .5em;
+    font-size: 2rem;
+    color: #fff;
+}
+
+h3{
+   font-size: 2rem;
+   color: #fff;
+}
+
+.contracted-commisioned{
+    
+    display: none;
+
+  
+}
+
+.contracted-commisioned.sales {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+} 
+
+input{
+    height: 3em;
+    font-size: 1.5rem;
+}
+
+button{
+    padding: 15px;
+    font-size: 1rem;
+}
+
+select{
+    width: 20%;
+    height: 3em;
+    margin: 30px;
+    font-size: 20px;
+}
+
+p{
+    font-size: 3rem;
+}
+
+@media (max-width:g600px){
+
+}
