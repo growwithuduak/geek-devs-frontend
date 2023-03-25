@@ -39,9 +39,11 @@ const checkEmployeeSalary = (hiredGoal, salesEarned) => {
 console.log(calcMonthlyPay("salaried"))
 console.log(calcMonthlyPay("contract", 243900))
 console.log(calcMonthlyPay("commissioned", 471050))
+console.log(calcMonthlyPay("commissioned", 0));
+console.log(calcMonthlyPay("contract", 0));
 console.log(calcMonthlyPay("newSalary"))
 
 
 // to-do:
-// write code that diables the console from displaying "undefined"
-// write code that enables checkEmployeeSalary get the value of salesPerMonth
+// write code which checks for edge case
+// write code which prevents console from displaying "undefined" (relates with "salaried")
