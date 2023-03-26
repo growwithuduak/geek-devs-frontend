@@ -42,7 +42,7 @@ const commission = (salesPerMonth) => {
 const contracted = (salesPerMonth) => {
     if(salesPerMonth >= 0 && salesPerMonth != "") {
         let contractSalary = salesPerMonth * 0.4;
-      return('Your pay for this month is: ' + contractSalary)
+      return 'Your pay for this month is: ' + contractSalary
     } 
 }
 
