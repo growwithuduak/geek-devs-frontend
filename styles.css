@@ -5,11 +5,34 @@ body,h1,p{
 .wego {
    background: rgb(72, 74, 101);
    width: 40%;
-   height: 45em;
-   margin: 15em;
+   height: 35em;
+   margin: 10px;
    padding: 10px;
    text-align: center;
    border: 5px rgb(13, 63, 202) solid;
+}
+
+.home {
+   margin: 80px auto;
+   padding: auto 10px;
+}
+.home h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.home input {
+    margin-top: 10px;
+
+}
+
+.home.home-page {
+    display: none;
+}
+
+.calculate-wages.inactive {
+    display: none;
 }
 
 nav {
@@ -40,8 +63,6 @@ h3{
 .contracted-commisioned{
     
     display: none;
-
-  
 }
 
 .contracted-commisioned.sales {
@@ -66,6 +87,10 @@ select{
     height: 3em;
     margin: 30px;
     font-size: 20px;
+}
+
+.salary-breakdown {
+     margin: 10px;
 }
 
 p{
@@ -99,7 +124,7 @@ p{
          
          
      
-     }
+     
      
      .sub-text {
          margin-top: .5em;
@@ -146,4 +171,5 @@ p{
      p{
          font-size: 2rem;
      }
+
 }

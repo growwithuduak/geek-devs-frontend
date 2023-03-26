@@ -1,17 +1,27 @@
-const employeeType = document.querySelector('.employee-type');
-const salariedEmployee = document.querySelector(".salaried-employee");
-const commissionedEmployee = document.querySelector('.commission-employee');
-const contractedEmployee = document.querySelector('.cotracted-employee');
-const Total = document.querySelector('.total');
-const select = document.querySelector('select');
-const calculateWages = document.querySelector('.caculate-wages')
-const Sales = document.querySelector('.sales');
-const Input = document.querySelector('input');
-const btn = document.querySelector('button');
+const Home = document.querySelector('.home')
+const Total = document.querySelector('.total')
+const select = document.querySelector('select')
+const calculateWages = document.querySelector('.calculate-wages')
+const totalSales = document.querySelector('.total-sales')
+const btn2 = document.querySelector('.btn-2')
+const btn1 = document.querySelector('.btn-1')
+const nameOfEmployee = document.querySelector('.employee-name')
 const commisionedContracted = document.querySelector('.contracted-commisioned')
+const salaryBreakdown = document.querySelector('.salary-breakdown')
+
+
+
+btn1.addEventListener('click', ()=> {
+    if(nameOfEmployee.value != " " && nameOfEmployee.value != null){
+        Home.classList.add('home-page')
+        calculateWages.classList.remove('inactive')
+    }
+    
+})
 
 select.addEventListener ('change', ()=> {
     Total.innerText = ""
+
     if(select.value == "Salaried") {
         commisionedContracted.classList.remove('sales')
         salaried();
@@ -19,43 +29,54 @@ select.addEventListener ('change', ()=> {
 
     } else if (select.value == "commisioned") {
         Total.innerHTML = "";
+        salaryBreakdown.innerHTML = ""
         commisionedContracted.classList.add('sales')
         commission();
-        Input.value = "";
+        totalSales.value = "";
 
     } else if (select.value == "contract") {
         Total.innerHTML = "";
+        salaryBreakdown.innerHTML = "";
         commisionedContracted.classList.add('sales')
         contracted();
-        Input.value = ""
+        totalSales.value = "";
+      
     } else {
         commisionedContracted.classList.remove('sales')
     }
     
 })
 
+
 salaried = () => {
-    Total.innerText = 'Your monthly pay is:  150,000';
+    Total.innerText = nameOfEmployee.value + ' your monthly pay is:  150,000 naira';
 }
 
 
 commission = () => {
-    btn.addEventListener('click', function() {
-        
-        let salesPerMonth = Input.value * 0.085;
-        let commissionedSalary = 80000 + salesPerMonth;
-        Total.innerText = 'Your monthly pay is: ' + commissionedSalary;
-        commisionedContracted.classList.remove('sales')
-       
-    })
-    
+    btn2.addEventListener('click', function() {
+        if(totalSales.value != 0 && totalSales != "") {
+            let salesPerMonth = totalSales.value * 0.085;
+            let commissionedSalary = 80000 + salesPerMonth;
+            Total.innerText =  nameOfEmployee.value + ' your monthly pay is: ' + commissionedSalary;
+            salaryBreakdown.innerHTML = ` Here's the summary of your monthly pay:
+             <br/> Base salary = 80,000 
+             <br/> Commission = 8.5% of 
+             ${totalSales.value} `;
+            commisionedContracted.classList.remove('sales')
+        } 
+    }) 
+
 }
 
 contracted = () => {
-    btn.addEventListener('click', function() {
-        let salesPerMonth = Input.value * 0.4;
-        Total.innerText = 'Your monthly pay is: ' + salesPerMonth;
-        commisionedContracted.classList.remove('sales')
+    btn2.addEventListener('click', function() {
+        if(totalSales.value != 0 && totalSales != "") {
+        let salesPerMonth = totalSales.value * 0.4;
+        Total.innerText = nameOfEmployee.value + ' Your monthly pay is: ' + salesPerMonth;
+        salaryBreakdown.innerHTML =  `You got 40% of 
+        ${totalSales.value} `;
+        commisionedContracted.classList.remove('sales');
+        }
     })
-    
 }
