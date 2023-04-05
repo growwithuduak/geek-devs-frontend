@@ -1,4 +1,4 @@
-# geek-devs-frontend
+### Async sample code
 Respository for Geek Devs frontend code
 I implemented a simple login system using what i learnt from the task tthes papst few days
 I made use of promise, async and await in this particular exercise
