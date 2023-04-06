@@ -30,7 +30,7 @@ let services = {
       console.log("Production completed");
       
     } catch(error) {
-        console.log("Customer left");
+        console.log("Customer is about to leave");
     
     } finally {
         console.log("Hope to see you next time");
