@@ -24,7 +24,7 @@ let services = {
       console.log("Start production");
       
       await time(2000);
-      console.log("Rendering sketches into colourful vector graphics");
+      console.log("Production in progress....");
       
       await time(5000);
       console.log("Production completed");
