@@ -28,10 +28,7 @@ let services = {
       
       await time(5000);
       console.log("Production in completed");
-      
-    } catch(error) {
-        console.log("Customer is about to leave");
-    
+       
     } finally {
         console.log("Hope to see you next time");
     }
