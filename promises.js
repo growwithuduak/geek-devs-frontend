@@ -13,12 +13,14 @@ let print = async () => {
         console.log("4");
     }, 200);
     return new Promise(async (resolve,reject)=>{
-        console.log("2");
+        resolve("2")
         print3();
-    })
-};
+    }).then(res => console.log(res))
+} ;
 
-let start=async()=>{
+console.log("Start printing...")
+
+let start = async() => {
    print();
    console.log("done")
 };
