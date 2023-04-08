@@ -9,7 +9,7 @@ const DelayTime = {
 
 
 
-const delayForFirstFixtures = () => {
+const delayForFirstFixture = () => {
     return new Promise(response => {
         setTimeout(() => {
             response();
@@ -18,9 +18,9 @@ const delayForFirstFixtures = () => {
 };
 
 
-const firstFixtures = async (a, b) => {
+const firstFixture = async (a, b) => {
     try {
-        await delayForFirstFixtures();
+        await delayForFirstFixture();
         console.log(a, "vs", b);
     }catch(err){
         console.log(err);
