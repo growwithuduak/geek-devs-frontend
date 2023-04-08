@@ -1,6 +1,26 @@
-import fetch from 'node-fetch'
+let print3 = async()=>{
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("3");
+        },100)
+    })
 
-fetch('https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1003')
-    .then((res) => res.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.log(err))
+}
+
+let print = async () => {
+    console.log("1");
+    setTimeout(() => {
+        console.log("4");
+    }, 200);
+    return new Promise(async (resolve,reject)=>{
+        console.log("2");
+        print3();
+    })
+};
+
+let start=async()=>{
+   print();
+   console.log("done")
+};
+
+start();
