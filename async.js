@@ -28,7 +28,7 @@ const firstFixtures = async (a, b) => {
 };
 
 
-//
+////
 console.log(club1);
 
 firstFixtures(club1, club2);
