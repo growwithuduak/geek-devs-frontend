@@ -1,52 +1,90 @@
-const wageCalculator = (employeeType) => {
-          
-    if (employeeType !="" && typeof employeeType === 'string') {
-        if(employeeType === "Salaried" || employeeType === "salaried") {
-            salaried();
-    
-        } else if (employeeType === "Commissioned" || employeeType === "commissioned") {
-           salesPerMonth = prompt("Enter your total sales for this month: ")
-        
-            commission(salesPerMonth);   
-    
-        } else if (employeeType === "Contracted" || employeeType === "contracted") {
-            salesPerMonth = prompt("Enter your total sales for this month: ")
-            
-            contracted(salesPerMonth);
-          
-    } else {
-        alert('Employee Type should be either Salaried, Commissioned or Contracted')
-    }
-} else {
-    alert('Please Enter a valid Employee type... (Salaried, Commissioned or Contracted) ')
+
+const EmployeeType = {
+	COMMISSIONED: 'COMMISSIONED',
+	CONTRACT: 'CONTRACT',
+	SALARIED: 'SALARIED'
+	//Add new type here
 }
 
+const EmployeeSalaryMap = {
+	CONTRACT: 0.4,
+	COMMISSIONED_BASE: 80000,
+	COMMISSIONED_PERCENTAGE: 0.085,
+	SALARIED: 150000
 }
 
-const salaried = () => {
-    
-   return 150000;
+const ErrorMessages = {
+	INVALID_EMPLOYEE_TYPE: 'Please enter a valid employee type',
+	INVALID_SALES_PER_MONTH: 'Please enter a valid sales per month greater than 0'
 }
 
-
-const commission = (salesPerMonth) => {
-  
-        if(salesPerMonth >= 0 && salesPerMonth != "") {
-            let commission = salesPerMonth * 0.085;
-            let commissionedSalary = 80000 + commission;
-          return 'Your pay for this month is: ' + commissionedSalary
-        } 
-
+const validateEmployeeType = (employeeType) => {
+	if (!EmployeeType[employeeType]) {
+		throw new Error(ErrorMessages.INVALID_EMPLOYEE_TYPE)
+	}
 }
 
-const contracted = (salesPerMonth) => {
-    if(salesPerMonth >= 0 && salesPerMonth != "") {
-        let contractSalary = salesPerMonth * 0.4;
-      return 'Your pay for this month is: ' + contractSalary
-    } 
+const validateSalesPerMonth = (salesPerMonth) => {
+	if (typeof (salesPerMonth) !== 'number' || salesPerMonth < 0) {
+		throw new Error(ErrorMessages.INVALID_SALES_PER_MONTH)
+	}
 }
 
 
+const computeAllTypeEmployeeSalary = (
+	baseSalary,
+	commission,
+	salesPerMonth
+) => baseSalary + (commission * salesPerMonth);
 
 
-console.log(wageCalculator("salaried"))
+const computeSalariedEmployeeSalary = () => {
+	return computeAllTypeEmployeeSalary(
+		EmployeeSalaryMap.SALARIED,
+		0,
+		0
+	)
+}
+
+
+const computeCommissionedEmployeeSalary = (salesPerMonth) => {
+	validateSalesPerMonth(salesPerMonth);
+	return computeAllTypeEmployeeSalary(
+		EmployeeSalaryMap.COMMISSIONED_BASE,
+		EmployeeSalaryMap.COMMISSIONED_PERCENTAGE,
+		salesPerMonth
+	)
+}
+
+const computeContractEmployeeSalary = (salesPerMonth) => {
+	validateSalesPerMonth(salesPerMonth);
+	return computeAllTypeEmployeeSalary(
+		0,
+		EmployeeSalaryMap.CONTRACT,
+		salesPerMonth
+	)
+}
+
+
+
+// This is the main function
+const computeEmployeeSalary = (
+	employeeType,
+	salesPerMonth
+) => {
+	validateEmployeeType();
+
+	if (employeeType === EmployeeType.SALARIED) {
+		return computeSalariedEmployeeSalary();
+	}
+
+	if (employeeType === EmployeeType.COMMISSIONED) {
+		return computeCommissionedEmployeeSalary(salesPerMonth);
+	}
+
+	if (employeeType === EmployeeType.CONTRACT) {
+		return computeContractEmployeeSalary(salesPerMonth);
+	}
+
+	return 0; // 
+}
