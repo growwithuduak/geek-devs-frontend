@@ -17,14 +17,14 @@ test("it calculates the correct salary for a salaried employee", () => {
 });
 
 test("it calculates the correct salary for a commissioned employee", () => {
-  const salesPerMonth = 50000;
+  const salesPerMonth = 100000;
   const salary = calculateEmployeeSalary(employeeTypes.COMMISSIONED, salesPerMonth);
   const expectedSalary = calculateCommissionedEmployeeSalary(salesPerMonth);
   expect(salary).toEqual(expectedSalary);
 });
 
 test("it calculates the correct salary for a contract  employee", () => {
-  const salesPerMonth = 50000
+  const salesPerMonth = 100000
   const salary = calculateEmployeeSalary(employeeTypes.CONTRACT, salesPerMonth);
   const expectedSalary = calculateContractEmployeeSalary(salesPerMonth);
   expect(salary).toEqual(expectedSalary);
