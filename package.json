@@ -1,0 +1,15 @@
+{
+  "name": "geek-devs-frontend",
+  "version": "1.0.0",
+  "description": "Respository for Geek Devs frontend code",
+  "main": "computeSalary.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
