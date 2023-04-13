@@ -1,0 +1,23 @@
+{
+  "name": "geek-devs-frontend-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "uduak-wego.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growwithuduak/geek-devs-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/growwithuduak/geek-devs-frontend/issues"
+  },
+  "homepage": "https://github.com/growwithuduak/geek-devs-frontend#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
