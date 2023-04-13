@@ -5,8 +5,8 @@ const AllExports = require("../computeSalary.js");
 
 //Arguments validation tests
 describe('validate parameter types', () => {
-    let employeeType = "abc";
-    let salesPerMonth = 123;
+    let employeeType="";
+    let salesPerMonth=123;
 
     test('passed argument checker is called with correct arguments', () => {
         const mockPassedArguments = jest.fn();
@@ -19,6 +19,8 @@ describe('validate parameter types', () => {
         const mockStringValueChecker = jest.fn();
 
         mockStringValueChecker(employeeType);
+        expect(mockStringValueChecker.mock.calls[0][0]).not.toBeNull();
+        expect(mockStringValueChecker.mock.calls[0][0]).not.toBeUndefined();
         expect(mockStringValueChecker).toHaveBeenCalledWith(expect.any(String));
       });
     
@@ -26,7 +28,10 @@ describe('validate parameter types', () => {
         const mockNumberValueChecker = jest.fn();
 
         mockNumberValueChecker(salesPerMonth);
-        expect(mockNumberValueChecker).toHaveBeenCalledWith(expect.any(Number));
+        expect(mockNumberValueChecker.mock.calls[0][0]).not.toBeNull();
+        expect(mockNumberValueChecker.mock.calls[0][0]).not.toBeUndefined();
+        expect(mockNumberValueChecker.mock.calls[0][0]).toBeGreaterThanOrEqual(0);
+        expect(mockNumberValueChecker).toHaveBeenCalledWith(expect.any(Number));    
       });
 });
 
