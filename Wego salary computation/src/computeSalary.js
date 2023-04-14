@@ -61,7 +61,19 @@ const validateEmployeeType = (employeeType) => {
 }
 
 const validateSalesPerMonth = (salesPerMonth) => {
-    if (salesPerMonth < 0 || typeof(salesPerMonth) === "number") {
+    if (salesPerMonth < 0 || typeof(salesPerMonth) !== "number") {
         throw new Error (ERROR_MESSAGES.SALES_PER_MONTH_ERROR)
     }
 }
+
+module.exports = {
+    validateEmployeeType, validateSalesPerMonth, 
+    computeAllEmployeeTypeSalary, computeCommissionedEmployee, 
+    computeContractEmployee, computeSalariedEmployee, 
+    computeEmployeeSalary, EMPLOYEE_SALARY_INFO, 
+    EMPLOYEE_TYPE, ERROR_MESSAGES
+}
+
+console.log(computeEmployeeSalary("SALARIED"))
+console.log(computeEmployeeSalary("COMMISSIONED", 213000))
+console.log(computeEmployeeSalary("CONTRACT", 123000))
