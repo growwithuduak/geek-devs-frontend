@@ -1,0 +1,22 @@
+{
+  "name": "wage-caculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growwithuduak/geek-devs-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/growwithuduak/geek-devs-frontend/issues"
+  },
+  "homepage": "https://github.com/growwithuduak/geek-devs-frontend#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}
