@@ -1,26 +1,85 @@
-const calculateEmployeeTakeHomeSalary = (employeeType, salesPerMonth) => {
-  if (typeof(employeeType) !== 'string')
-    return 'Employee type should be either SALARIED, COMMISSIONED or CONTRACT';
-  if (isNaN(salesPerMonth) || salesPerMonth <= 0)
-    return 'Sales Per Month should be a number greater than 0';
-  if (
-    employeeType !== 'SALARIED' &&
-    employeeType !== 'COMMISSIONED' &&
-    employeeType !== 'CONTRACT'
-  )
-    return 'Employee type should be either SALARIED, COMMISSIONED or CONTRACT';
+const EmployeeType = {
+  COMMISSIONED: 'COMMISSIONED',
+  CONTRACT: 'CONTRACT',
+  SALARIED: 'SALARIED',
+};
 
-  const commissionRate = 0.085;
-  const contractRate = 0.4;
-  const salariedEmployee = 150000;
-  const commissionedEmployee = 80000 + commissionRate * salesPerMonth;
-  const contractedEmployee = contractRate * salesPerMonth;
+const EmployeeSalaryMap = {
+  CONTRACT: 0.4,
+  COMMISSIONED_BASE: 80000,
+  COMMISSIONED_PERCENTAGE: 0.085,
+  SALARIED: 150000,
+};
 
-  return `Monthly pay is ₦${
-    employeeType === 'SALARIED'
-      ? salariedEmployee.toLocaleString()
-      : employeeType === 'COMMISSIONED'
-      ? commissionedEmployee.toLocaleString()
-      : contractedEmployee.toLocaleString()
-  }`;
+const ErrorMessages = {
+  INVALID_EMPLOYEE_TYPE: 'Please enter a valid employee type',
+  INVALID_SALES_PER_MONTH:
+    'Please enter a valid sales per month greater than 0',
+};
+
+const validateEmployeeType = (employeeType) => {
+  if (!EmployeeType[employeeType]) {
+    throw new Error(ErrorMessages.INVALID_EMPLOYEE_TYPE);
+  }
+};
+
+const validateSalesPerMonth = (salesPerMonth) => {
+  if (typeof salesPerMonth !== 'number' || salesPerMonth < 0) {
+    throw new Error(ErrorMessages.INVALID_SALES_PER_MONTH);
+  }
+};
+
+computeAllTypeEmployeeSalary = (baseSalary, commission, salesPerMonth) =>
+  baseSalary + commission * salesPerMonth;
+
+const computeSalariedEmployeeSalary = () => {
+  return computeAllTypeEmployeeSalary(EmployeeSalaryMap.SALARIED, 0, 0);
+};
+
+const computeCommissionedEmployeeSalary = (salesPerMonth) => {
+  validateSalesPerMonth(salesPerMonth);
+  return computeAllTypeEmployeeSalary(
+    EmployeeSalaryMap.COMMISSIONED_BASE,
+    EmployeeSalaryMap.COMMISSIONED_PERCENTAGE,
+    salesPerMonth
+  );
+};
+
+const computeContractEmployeeSalary = (salesPerMonth) => {
+  validateSalesPerMonth(salesPerMonth);
+  return computeAllTypeEmployeeSalary(
+    0,
+    EmployeeSalaryMap.CONTRACT,
+    salesPerMonth
+  );
+};
+
+const computeEmployeeSalary = (employeeType, salesPerMonth) => {
+  validateEmployeeType(employeeType);
+
+  if (employeeType === EmployeeType.SALARIED) {
+    return computeSalariedEmployeeSalary();
+  }
+
+  if (employeeType === EmployeeType.COMMISSIONED) {
+    return computeCommissionedEmployeeSalary(salesPerMonth);
+  }
+
+  if (employeeType === EmployeeType.CONTRACT) {
+    return computeContractEmployeeSalary(salesPerMonth);
+  }
+
+  return 0;
+};
+
+module.exports = {
+  computeEmployeeSalary,
+  EmployeeType,
+  EmployeeSalaryMap,
+  ErrorMessages,
+  validateEmployeeType,
+  validateSalesPerMonth,
+  computeSalariedEmployeeSalary,
+  computeCommissionedEmployeeSalary,
+  computeContractEmployeeSalary
 };
