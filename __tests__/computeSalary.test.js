@@ -7,17 +7,13 @@
 const {
   computeEmployeeSalary,
   EmployeeType,
-  EmployeeSalaryMap,
   ErrorMessages,
   validateEmployeeType,
   validateSalesPerMonth,
-  computeAllTypeEmployeeSalary,
   computeSalariedEmployeeSalary,
   computeCommissionedEmployeeSalary,
   computeContractEmployeeSalary,
 } = require('../salary-calculator');
-
-//test case 1
 
 const salesPerMonth = 80000;
 
