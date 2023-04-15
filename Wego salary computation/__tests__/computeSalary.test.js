@@ -29,7 +29,7 @@ describe("Error handler", () => {
         expect(() => {validateEmployeeType("INTERN").toThrow(ERROR_MESSAGES.EMPLOYEE_TYPE_ERROR)})
     })
 
-    test("Error handling for invalid employee" , () => {
+    test("Error handling for invalid sales per month" , () => {
         expect(() => {validateSalesPerMonth(-19.45).toThrow(ERROR_MESSAGES.SALES_PER_MONTH_ERROR)})
     })
 })
