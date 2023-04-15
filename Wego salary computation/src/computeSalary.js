@@ -21,7 +21,7 @@ const computeAllEmployeeTypeSalary = (baseSalary, rate, salesPerMonth) => {
 }
 
 const computeSalariedEmployee = () => {
-    return computeAllEmployeeTypeSalary(EMPLOYEE_TYPE.SALARIED, 0, 0);
+    return computeAllEmployeeTypeSalary(EMPLOYEE_SALARY_INFO.SALARIED_BASE_SALARY, 0, 0);
 }
 
 const computeCommissionedEmployee = (salesPerMonth) => {
@@ -66,6 +66,13 @@ const validateSalesPerMonth = (salesPerMonth) => {
     }
 }
 
+
+
+console.log(computeEmployeeSalary("SALARIED"))
+console.log(computeEmployeeSalary("COMMISSIONED", 213000))
+console.log(computeEmployeeSalary("CONTRACT", 123000))
+
+
 module.exports = {
     validateEmployeeType, validateSalesPerMonth, 
     computeAllEmployeeTypeSalary, computeCommissionedEmployee, 
@@ -73,7 +80,3 @@ module.exports = {
     computeEmployeeSalary, EMPLOYEE_SALARY_INFO, 
     EMPLOYEE_TYPE, ERROR_MESSAGES
 }
-
-console.log(computeEmployeeSalary("SALARIED"))
-console.log(computeEmployeeSalary("COMMISSIONED", 213000))
-console.log(computeEmployeeSalary("CONTRACT", 123000))

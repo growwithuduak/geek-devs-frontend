@@ -14,11 +14,11 @@ describe ("unit testing for all types of employee", () => {
     })
 
     test("Correct logic for the commissioned employee", () => {
-        expect(computeEmployeeSalary("COMMISSIONED", 321000).toEqual(computeCommissionedEmployee(321000)))
+        expect(computeEmployeeSalary("COMMISSIONED", 321000)).toEqual(computeCommissionedEmployee(321000))
     })
 
     test("Correct logic for the contract employee", () => {
-        expect(computeEmployeeSalary("CONTRACT", 123000).toEqual(computeContractEmployee(123000)))
+        expect(computeEmployeeSalary("CONTRACT", 123000)).toEqual(computeContractEmployee(123000))
     })
     
 })
