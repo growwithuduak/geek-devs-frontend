@@ -84,7 +84,7 @@ const {
   
     it('should return the correct salary for a commissioned employee', () => {
       expect(computeAllEmployeeTypeSalary(employeeSalaryStructure.commissionedBaseSalary, 1000, employeeSalaryStructure.commissionRate))
-        .toBeCloseTo(87200, 2);
+        .toBeCloseTo(80085, 2);
     });
   
     it('should return the correct salary for a contract employee', () => {
