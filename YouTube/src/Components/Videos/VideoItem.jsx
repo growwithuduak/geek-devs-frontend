@@ -1,14 +1,15 @@
 import React from "react";
+import "./VideoItem.css";
 
 const VideoItem = (props) => {
 
     const {image, alt, title, author} = props;
 
     return (
-        <div>
+        <div className="video-item">
             <img src={image} alt={alt} />
-            <h3>{title}</h3>
-            <h4>{author}</h4>
+            <h3 className="title">{title}</h3>
+            <h4 className="author">{author}</h4>
         </div>
     )
 }

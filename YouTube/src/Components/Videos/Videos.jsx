@@ -1,8 +1,9 @@
 import React from "react";
-import VideoItem from "./VideoItem"
+import VideoItem from "./VideoItem";
+import VideosCard from "../UI/VideosCard";
 
 
-const Videos = (props) => {
+const Videos = () => {
     
 
     const VIDEOS_INFO = [
@@ -77,7 +78,10 @@ const Videos = (props) => {
     return(
         <div>
             <h2>Video Item</h2>
-            {video}
+            <div className="videos">
+               {video} 
+            </div>
+                    
         </div>
     )
 }
