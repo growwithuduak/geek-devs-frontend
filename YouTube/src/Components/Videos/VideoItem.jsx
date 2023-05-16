@@ -2,11 +2,11 @@ import React from "react";
 
 const VideoItem = (props) => {
 
-    const {title, image, author, alt} = props;
+    const {image, alt, title, author} = props;
 
     return (
         <div>
-            <img src = {image} alt = {alt}> </img>
+            <img src={image} alt={alt} />
             <h3>{title}</h3>
             <h4>{author}</h4>
         </div>
