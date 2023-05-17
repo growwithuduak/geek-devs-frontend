@@ -1,4 +1,4 @@
-#React Project using YouTube Component Architecture
+# React Project using YouTube Component Architecture
 
 To run the repo on your local machine, take the following steps:
 
