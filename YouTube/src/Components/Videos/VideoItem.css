@@ -3,3 +3,7 @@
     width: 30%;
     margin: 10px;
 }
+
+img {
+    max-width: auto;
+}
