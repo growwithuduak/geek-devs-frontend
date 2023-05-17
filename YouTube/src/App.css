@@ -1,0 +1,6 @@
+.videos {
+    border: 1px solid red;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

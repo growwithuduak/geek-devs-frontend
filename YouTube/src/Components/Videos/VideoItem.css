@@ -1,0 +1,9 @@
+.video-item {
+    border: 1px solid black;
+    width: 30%;
+    margin: 10px;
+}
+
+img {
+    max-width: auto;
+}
