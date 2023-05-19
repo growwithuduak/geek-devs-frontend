@@ -1,0 +1,67 @@
+.container {
+  padding: 5rem;
+  height: auto;
+}
+
+.carouselContainer {
+  width: 100%;
+  height: 500px;
+}
+
+.courseContainer {
+  width: auto;
+  cursor: pointer;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coursesContainer {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.badgeContainer {
+  width: auto;
+}
+
+.badge {
+  padding: 8px;
+}
+
+.courseDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.discountPrice {
+  text-decoration: line-through;
+}
+
+.author,
+.discountPrice,
+.veiwerCount {
+  color: #6a6f73;
+  font-weight: normal;
+}
+
+.ratings {
+  color: #b4690e;
+}
