@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.header-bar {
+    margin: auto;
+    width: 99%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(90, 78, 78);
+    
+}
+
+.left-section {
+    width: 15%;
+    margin: 0px;
+    padding-left: 1%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    gap: 10px;
+    overflow: hidden;
+    font-size: auto;
+}
+
+.middle-section {
+    margin: 0;
+    width: 60%;
+    height: 10px;
+    margin-left: 0%;
+    padding-bottom: 1%;
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px;
+    gap: 10px;
+}
+
+.input-field::placeholder {
+    font-size: 56px;
+    color: gray;
+    padding: 10px;
+  }
+
+.text-area {
+    width: 52%;
+    height: 30px;
+    border-radius: 8px;
+    gap: 10px
+}
+
+.right-section {
+    width: 12%;
+    height: 80%;
+    display: flex;
+    
+    gap: 35px;
+    text-align: right;
+    overflow: hidden;
+    
+}
+
+.sign-in {
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 14%;
+    font-size: xx-small;
+    margin: 24px;
+    position: relative;
+    right:29px;  
+    z-index:1000; 
+    overflow: hidden;
+
+    
+}
