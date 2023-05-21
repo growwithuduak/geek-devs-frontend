@@ -18,8 +18,8 @@ const leftItems = {
 
 const rightItems = {
   item1: <img src={dotsIcon} width="40" height="35"/>,
-  item2: <img src={signInIcon} width="40" height="35" />,
-  item3: 'Sign In',
+  item2: <img src={signInIcon} width="30" height="30" />,
+  item3: <button className='sign-in'>Sign In</button>,
 }
 
 
@@ -39,11 +39,14 @@ const SearchBar = () => {
   const placeholderText = 'Search ';
   
   return (
-    <form className='search-bar'>
+    <div className='search-bar'>
+      <form className='search-bar'>
       <input className="text-area" type="text" placeholder={placeholderText}  />
       <img className='search-icon' src={searchMagnifier} alt="Search" width="20" height="25" />
       <img className='micro-phone' src={microPhoneIcon} alt="Search" width="20" height="25" />
-    </form>
+      </form>
+    </div>
+    
   );
 };
 
@@ -62,9 +65,11 @@ const RightSection = ({props}) => {
 
   return (
     <div className='right-section'>
-      <h2>{props.item1}</h2>    
-      <h2>{props.item2}</h2>
-      <h1 className='sign-in'>{props.item3}</h1>
+      <h2>{props.item1}</h2>
+      <div className='right-wrapper'>
+        <>{props.item2}</>
+        <>{props.item3}</>
+      </div>    
     </div>
   );
 };
