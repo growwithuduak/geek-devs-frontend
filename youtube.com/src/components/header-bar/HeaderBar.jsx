@@ -39,14 +39,20 @@ const SearchBar = () => {
   const placeholderText = '  Search ';
   
   return (
-    <div className='search-bar'>
-      <form className='search-bar'>
-      <input className="text-area" type="text" placeholder={placeholderText}  />
-      <img className='search-icon' src={searchMagnifier} alt="Search" width="20" height="25" />
-      <img className='micro-phone' src={microPhoneIcon} alt="Search" width="20" height="25" />
-      </form>
+    <div className='middle-outer-wrapper'>
+      <div className='search-area'>
+        <form className='search-bar'>
+          <input className="text-area" type="text" placeholder={placeholderText}  />
+        </form>
+      </div>
+      <div className='middle-inner-wrapper'>
+        <div className='search-icon-border'>
+          <img className='search-icon' src={searchMagnifier} alt="Search" width="20" height="25" />
+        </div>
+          
+        <img className='micro-phone-icon' src={microPhoneIcon} alt="Search" width="20" height="25" />
+      </div>
     </div>
-    
   );
 };
 

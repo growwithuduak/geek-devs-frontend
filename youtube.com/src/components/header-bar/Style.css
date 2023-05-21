@@ -29,28 +29,75 @@ body {
 }
 
 .middle-section {
-    margin: 0.01rem;
-    width: 50%;
+    margin: 0.9rem;
+    width: 63%;
     text-align: center;
+    display: inline;
     flex-grow: 1;
-    padding: 10px;
 }
 
-.input-field::placeholder {
-    font-size: 56px;
-    color: black;
-    padding: 10px;
-  }
+.middle-outer-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 1%;
+}
+
+.search-area {
+    width: 80%;
+}
+
+.search-bar {
+    width: 100%;
+}
 
 .text-area {
-    width: 70%;
+    width: 100%;
     height: 30px;
     border: none;
     border-radius: 12px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    font-size: medium;
+}
+
+.middle-inner-wrapper {
+    width: 14%;
+    display: flex;
+    align-items: left;
+    gap: 0.5rem;
+}
+
+.search-icon-border {
+    width: 50%;
+    height: 80%;
+    border: solid grey;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 14px;
+    display: flex;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.search-icon {
+    margin: auto;
+    border-radius: 30%;
+    width: 47%;
+    height: 60%;
+}
+
+
+.micro-phone-icon {
+    padding: 1px;
+    background-color: grey;
+    border: solid grey;
+    border-radius: 14px;
+    width: 17%;
+    height: 60%;
 }
 
 .right-section {
-    width: 20%;
+    width: 18%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
