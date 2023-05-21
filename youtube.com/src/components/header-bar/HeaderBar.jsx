@@ -7,6 +7,9 @@ import microPhoneIcon from '../../assets/microphone-icon.svg'
 import dotsIcon from '../../assets/3-dots-icon.svg'
 import signInIcon from '../../assets/sign-in-icon.svg'
 
+
+
+
 const leftItems = {
   item1: <img src={menuHoverIcon} width="30" height="35"/>,
   item2: <img src={youtubeIcon} width="40" height="35"/>,
@@ -14,13 +17,13 @@ const leftItems = {
 }
 
 
-
-
 const rightItems = {
   item1: <img src={dotsIcon} width="40" height="35"/>,
   item2: <img src={signInIcon} width="30" height="30" />,
   item3: <button className='sign-in'>Sign In</button>,
 }
+
+
 
 
 const LeftSection = ({props}) => {

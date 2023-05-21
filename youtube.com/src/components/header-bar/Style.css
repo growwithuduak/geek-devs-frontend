@@ -52,8 +52,9 @@ body {
 
 .text-area {
     width: 100%;
-    height: 30px;
-    border: none;
+    height: 32px;
+    border: solid;
+    border-color: none;
     border-radius: 12px;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
@@ -69,7 +70,7 @@ body {
 
 .search-icon-border {
     width: 50%;
-    height: 80%;
+    height: 86%;
     border: solid grey;
     justify-content: center;
     background-color: grey;
