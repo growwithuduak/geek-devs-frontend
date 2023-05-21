@@ -65,12 +65,11 @@ body {
     width: 14%;
     display: flex;
     align-items: left;
-    gap: 0.5rem;
 }
 
 .search-icon-border {
     width: 50%;
-    height: 86%;
+    height: 89%;
     border: solid grey;
     justify-content: center;
     background-color: grey;
@@ -84,12 +83,12 @@ body {
     margin: auto;
     border-radius: 30%;
     width: 47%;
-    height: 60%;
+    height: 62%;
 }
 
 
 .micro-phone-icon {
-    padding: 1px;
+    margin: auto;
     background-color: grey;
     border: solid grey;
     border-radius: 14px;
