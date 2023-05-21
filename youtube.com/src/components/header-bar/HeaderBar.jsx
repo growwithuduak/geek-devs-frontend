@@ -36,7 +36,7 @@ const LeftSection = ({props}) => {
 
 
 const SearchBar = () => {
-  const placeholderText = 'Search ';
+  const placeholderText = '  Search ';
   
   return (
     <div className='search-bar'>

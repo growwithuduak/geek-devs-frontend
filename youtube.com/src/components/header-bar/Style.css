@@ -17,7 +17,7 @@ body {
 
 .left-section {
     width: 25%;
-    margin: 0px;
+    margin: 0.55rem;
     padding-left: 1%;
     height: 80%;
     display: flex;
@@ -29,6 +29,7 @@ body {
 }
 
 .middle-section {
+    margin: 0.01rem;
     width: 50%;
     text-align: center;
     flex-grow: 1;
@@ -37,15 +38,15 @@ body {
 
 .input-field::placeholder {
     font-size: 56px;
-    color: gray;
+    color: black;
     padding: 10px;
   }
 
 .text-area {
     width: 70%;
     height: 30px;
-    border-radius: 8px;
-    gap: 10px
+    border: none;
+    border-radius: 12px;
 }
 
 .right-section {
@@ -54,11 +55,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
-    /* gap: 15px;
-    text-align: right;
-    overflow: hidden; */
-    
 }
 
 .right-wrapper {
