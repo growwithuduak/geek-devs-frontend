@@ -1,0 +1,22 @@
+.btn {
+    border: none;
+    width: 12em;
+    height: 2em;
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+.btn:hover{
+    background: rgb(164, 163, 163);
+}
+
+li {
+    list-style: none;
+    padding: 8px;
+    width: 10em;
+}
+li:hover {
+    background: rgb(164, 163, 163) ;
+}
