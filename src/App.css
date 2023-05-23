@@ -1,0 +1,14 @@
+.myComponent {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    margin: 10px;
+    
+}
+
+p{
+    display: flex;
+    justify-content: space-around;
+
+}

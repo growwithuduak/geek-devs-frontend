@@ -1,0 +1,79 @@
+.nav-bar {
+    background: rgba(2, 86, 160, 0.881);
+    height: 3em;
+    display: flex;
+    color: white;
+
+}
+.hero{
+    display: flex;
+    align-items: center;
+}
+.Trello_logo{
+    border: 3px solid white;
+    width: 20px;
+    margin-left: 15px;
+    height: 30px;
+
+}
+
+.nav-left{
+   display: flex;
+   align-items: center;
+   
+}
+.listItems{
+    margin: 20px;
+    height: 25px;
+    width: 75px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+    
+}
+
+.listItems:hover{
+    background: rgba(3, 5, 7, 0.331); 
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-left: -2em;
+
+}
+li {
+    gap: 2em;
+}
+.right-col {
+    margin: auto;
+    width: auto;
+    display: flex;
+    gap: 10px;
+}
+.search-btn{
+    border: none;
+    background: rgba(95, 161, 219, 0.616);
+    height: 30px;
+    border-radius: 5px;
+}
+.search-btn:hover{
+    border: 1px solid white;
+    background: rgba(95, 161, 219, 0.886);
+
+
+}
+
+#create-btn{
+    background: rgba(3, 5, 7, 0.331);
+    border: none;
+    height: 35px;
+    width: 60px;
+    border-radius: 4px;
+    color: white;
+}
+#create-btn:hover{
+    background: rgba(95, 161, 219, 0.616);
+
+}
