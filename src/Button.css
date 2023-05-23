@@ -5,18 +5,20 @@
     background: none;
     font-weight: bold;
     font-size: 18px;
+    margin: 10px;
     
 }
 
 .btn:hover{
-    background: rgb(164, 163, 163);
+    background: rgba(164, 163, 163, 0.153);
 }
 
-li {
+.space-list {
     list-style: none;
     padding: 8px;
     width: 10em;
+    margin: 2px;
 }
-li:hover {
-    background: rgb(164, 163, 163) ;
+.space-list:hover {
+    background: rgba(164, 163, 163, 0.137) ;
 }

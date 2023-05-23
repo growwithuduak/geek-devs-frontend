@@ -11,14 +11,14 @@ export const Button = (props)=> {
     return (
         <>
         <button className="btn"  onClick={toggleExpand}> {props.text}  </button>
-        {
+        { 
             expand &&
             <ul>
-            <li>Boards</li>
-            <li>Highlights</li>
-            <li>Views</li>
-            <li>Members</li>
-            <li>Settings</li>
+            <li className="space-list">Boards</li>
+            <li className="space-list">Highlights</li>
+            <li className="space-list">Views</li>
+            <li className="space-list">Members</li>
+            <li className="space-list">Settings</li>
             
         </ul>
         }

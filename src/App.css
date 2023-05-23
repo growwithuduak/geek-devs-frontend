@@ -3,7 +3,8 @@
     flex-direction: column;
     width: 20%;
     height: 100vh;
-    background: whitesmoke;
+    margin: 10px;
+    
 }
 
 p{
