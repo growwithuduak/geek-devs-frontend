@@ -26,6 +26,9 @@ Check the list of available branches
 Create a copy of the remote branch to your local repository
 - `git checkout -b storybook-setup origin/feature/storybook-setup`
 
+Open the files using:
+`code .` in terminal
+
 
 ## HOW INSTALL THE PROJECT
 
