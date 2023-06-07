@@ -15,7 +15,7 @@ Repository for Geek Devs frontend code
 clone the root repository 
 - `git clone https://github.com/growwithuduak/geek-devs-frontend.git`
 
-#### Note: Ensure you are on the main branch and that you have made commits to your previous projects before checking out to a new branch.
+##### Note: Ensure you are on the main branch and that you have made commits to your previous projects before checking out to a new branch.
 
 Fetch all the remote branches from the repository
 - `git fetch origin`
@@ -28,6 +28,9 @@ Create a copy of the remote branch to your local repository
 
 Open the files using:
 `code .` in terminal
+
+Push to the branch of the same name on the remote, using:
+`git push origin HEAD`
 
 
 ## HOW INSTALL THE PROJECT
