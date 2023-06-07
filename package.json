@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "storybook dev -p 6006",
+    "start-storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
