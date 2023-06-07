@@ -27,10 +27,12 @@ Create a copy of the remote branch to your local repository
 - `git checkout -b storybook-setup origin/feature/storybook-setup`
 
 Open the files using:
-`code .` in terminal
+- `code .` in terminal
 
-Push to the branch of the same name on the remote, using:
-`git push origin HEAD`
+Push to the upstream branch (upstream branch is the remote branch which is being tracked by your local branch), using:
+- `git push origin HEAD:feature/storybook-setup`
+
+
 
 
 ## HOW INSTALL THE PROJECT
