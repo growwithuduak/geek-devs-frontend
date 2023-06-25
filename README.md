@@ -11,20 +11,20 @@ This describes how the folder structure for how we are organizing our project
 ├───assets
 ├───components
 │   └───Component
-|				└───__tests__
-|							└───Component.test.jsx
-|				└───Component.jsx
-|				└───Component.stories.js
-|				└───styles.css
-|				└───index.js
+|			└───__tests__
+|						└───Component.test.jsx
+|			└───Component.jsx
+|			└───Component.stories.js
+|			└───styles.css
+|			└───index.js
 ├───pages
 │   └───Page
-|				└───__tests__
-|							└───Page.test.jsx
-|				└───Page.jsx
-|				└───Page.stories.js
-|				└───styles.css
-|				└───index.js
+|			└───__tests__
+|						└───Page.test.jsx
+|			└───Page.jsx
+|			└───Page.stories.js
+|			└───styles.css
+|			└───index.js
 
 ```
 
