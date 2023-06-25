@@ -2,6 +2,7 @@
   "name": "geek-devs-frontend",
   "private": true,
   "version": "0.0.0",
+  "description": "Respository for Geek Devs frontend code",
   "type": "module",
   "scripts": {
     "build": "vite build",
@@ -15,6 +16,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growwithuduak/geek-devs-frontend.git"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.17",
