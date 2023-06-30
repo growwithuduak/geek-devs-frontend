@@ -1,0 +1,29 @@
+.playlistCard {
+    border: 1px solid black;
+    display: flex;
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.playlistIconButton {
+    color: orange;
+}
+
+.playlistImage {
+    width: 100px;
+    height: 100px;
+}
+
+.playlistDescription {
+    margin: 3px;
+
+}
+
+.playlistDescription .span {
+    font-size: 20px;
+}
+
+.playlistCount {
+    margin-right: 5px;
+}
