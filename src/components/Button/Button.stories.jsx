@@ -5,35 +5,40 @@ export default {
   title: 'Example/Button',
   component: Button,
   tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary = {
   args: {
-    primary: true,
-    label: 'Button',
+    color: 'primary',
+    label: 'Hello World!',
   },
 };
 
 export const Secondary = {
   args: {
-    label: 'Button',
+    color: 'secondary',
+    label: 'Hello World!',
   },
 };
 
 export const Large = {
   args: {
     size: 'large',
-    label: 'Button',
+    label: 'Hello World!',
+  },
+};
+
+export const Medium = {
+  args: {
+    size: 'medium',
+    label: 'Hello World!',
   },
 };
 
 export const Small = {
   args: {
     size: 'small',
-    label: 'Button',
+    label: 'Hello World!',
   },
 };
