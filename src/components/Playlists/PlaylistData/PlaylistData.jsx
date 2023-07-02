@@ -11,7 +11,7 @@ const PlaylistData = [
         id: 2,
         image: "/Assets/Playlist two.jpg",
         alt: "Playlist two",
-        musicCount: 12,
+        musicCount: "12",
         streamCount: "80",
         commentCount: "33",
     },
