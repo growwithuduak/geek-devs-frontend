@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import PlaylistItem from "../PlaylistItem/PlaylistItem";
 import PlaylistData from "../PlaylistData/PlaylistData";
 
-const Playlists = (props) => {
+const PublicPlaylists = (props) => {
 
     const Playlists = PlaylistData.map(item => {
         return <PlaylistItem
@@ -26,4 +26,4 @@ const Playlists = (props) => {
 
 }
 
-export default Playlists;
+export default PublicPlaylists;

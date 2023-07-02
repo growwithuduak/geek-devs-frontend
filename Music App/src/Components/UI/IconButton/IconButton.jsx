@@ -1,14 +1,14 @@
 import React, { Fragment } from "react";
 import "./IconButton.css";
 
-const RoundIconButton = (props) => {
+const IconButton = (props) => {
     const {type} = props;
 
     return (
         <Fragment >
 
             <div className="iconButton">
-                <ion-icon name="add-outline" className="addIcon"></ion-icon>
+                <ion-icon name="add-outline" size="large" className="addIcon" aria-label="Add-Icon"></ion-icon>
             </div>
 
         </Fragment>
@@ -16,4 +16,4 @@ const RoundIconButton = (props) => {
 
 }
 
-export default RoundIconButton;
+export default IconButton;

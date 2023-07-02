@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 
-import Playlists from "./Components/Playlists/PublicPlaylists/Playlists"
+import PublicPlaylists from "./Components/Playlists/PublicPlaylists/PublicPlaylists"
 
 import './App.css'
 
@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <Fragment>
-      <Playlists />
+      <PublicPlaylists />
     </Fragment>
   )
 }
