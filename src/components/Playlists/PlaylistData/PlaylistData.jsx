@@ -1,7 +1,7 @@
 const PlaylistData = [
     {
         id: 1,
-        image: "../../../assets/Playlist one.webp",
+        image: "/Assets/Playlist one.webp",
         alt: "Playlist one",
         musicCount: "5",
         streamCount: "9k",
@@ -9,7 +9,7 @@ const PlaylistData = [
     },
     {
         id: 2,
-        image: "",
+        image: "/Assets/Playlist two.jpg",
         alt: "Playlist two",
         musicCount: "12",
         streamCount: "80",
@@ -17,7 +17,7 @@ const PlaylistData = [
     },
     {
         id: 3,
-        image: "/assets/Playlist three.jpg",
+        image: "/Assets/Playlist three.jpg",
         alt: "Playlist three",
         musicCount: "4",
         streamCount: "89",
@@ -25,7 +25,7 @@ const PlaylistData = [
     },
     {
         id: 4,
-        image: "/assets/Playlist four.jpg",
+        image: "/Assets/Playlist four.jpg",
         alt: "Playlist four",
         musicCount: "25",
         streamCount: "9k",
@@ -33,7 +33,7 @@ const PlaylistData = [
     },
     {
         id: 5,
-        image: "/assets/Playlist five.jpg",
+        image: "/Assets/Playlist five.jpg",
         alt: "Playlist five",
         musicCount: "5",
         streamCount: "9k",
