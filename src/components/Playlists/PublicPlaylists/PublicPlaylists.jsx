@@ -21,7 +21,7 @@ const PublicPlaylists = (props) => {
 
     return (
         <Fragment className="playlist">
-            <h4>Public Playlists</h4>
+            <h4 className="playlist-heading">Public Playlists</h4>
             <div className="playlist-card">
             {Playlists}
             </div>

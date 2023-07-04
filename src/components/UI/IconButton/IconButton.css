@@ -3,22 +3,12 @@
     width: 30px;
     height: 30px;
     background-color: #FFBD59;
+    border: none;
+    text-align: center;
+    top: -30px;
+    right: -30px;
 }
 
 .addIcon {
-    position: fixed;
-    align-items: center;
-    color: #000814;
-}
-
-.iconButton--small {
-    color: #000814;
-}
-
-.iconButton--medium {
-    color: #000814;
-}
-
-.iconButton--large {
-    color: #000814;
+    color: #000;
 }
