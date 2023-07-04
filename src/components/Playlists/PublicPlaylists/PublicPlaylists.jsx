@@ -3,6 +3,8 @@ import React, { Fragment } from "react";
 import PlaylistItem from "../PlaylistItem/PlaylistItem";
 import PlaylistData from "../PlaylistData/PlaylistData";
 
+import './PublicPlaylists.css'
+
 const PublicPlaylists = (props) => {
 
     const Playlists = PlaylistData.map(item => {
@@ -18,9 +20,11 @@ const PublicPlaylists = (props) => {
     })
 
     return (
-        <Fragment>
+        <Fragment className="playlist">
             <h4>Public Playlists</h4>
+            <div className="playlist-card">
             {Playlists}
+            </div>
         </Fragment>
     )
 
