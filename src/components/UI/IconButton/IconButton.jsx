@@ -2,14 +2,16 @@ import React, { Fragment } from "react";
 import "./IconButton.css";
 
 const IconButton = (props) => {
-    const {type} = props;
+    const {size, backgroundColor, name} = props;
+
+    
 
     return (
         <Fragment >
 
-            <div className="iconButton">
-                <ion-icon name="add-outline" size="large" className="addIcon" aria-label="Add-Icon"></ion-icon>
-            </div>
+            <button className="iconButton">
+                <ion-icon name={name} size={size} className="addIcon" aria-label="Add-Icon"></ion-icon>
+            </button>
 
         </Fragment>
     )

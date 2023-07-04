@@ -11,7 +11,7 @@ const PlaylistItem = (props) => {
         <Fragment>
             <div className="playlistCard">
 
-            <IconButton className="playlistIconButton" />
+            <IconButton className="playlistIconButton" size="large" name="add-outline" />
             <img className="playlistImage" src={image} alt={alt}  />
             <h4 className="playlistDescription">
                 <span className="playlistCount"><ion-icon name="musical-notes-outline"></ion-icon>{musicCount}</span>
