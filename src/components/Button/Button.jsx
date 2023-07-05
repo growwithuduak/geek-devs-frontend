@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 export const Button = ({ color, size, label, ...props }) => {
-  const buttonSize = size === 'medium' ? 'mediumButton' : size === 'large' ? 'largeButton' : 'smallButton';
+  const validSizes = ['small', 'medium', 'large'];
+  const buttonSize = validSizes.includes(size) ? size : 'medium';
+  const buttonClass = buttonSize === 'small' ? 'smallButton' : buttonSize === 'large' ? 'largeButton' : 'mediumButton';
   const buttonColor = color === 'primary' ? 'primaryButton' : 'secondaryButton';
 
   return (
     <button
       type="button"
-      className={`textButton ${buttonSize} ${buttonColor}`}
+      className={`textButton ${buttonClass} ${buttonColor}`}
       {...props}
     >
       {label}
