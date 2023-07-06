@@ -20,11 +20,14 @@ const PublicPlaylists = (props) => {
     })
 
     return (
-        <Fragment className="playlist">
-            <h4 className="playlist-heading">Public Playlists</h4>
+        <Fragment >
+            <div className="playlist-body">
+                 <h4 className="playlist-heading">Public Playlists</h4>
             <div className="playlist-card">
             {Playlists}
             </div>
+            </div>
+           
         </Fragment>
     )
 
