@@ -9,10 +9,9 @@ const IconButton = (props) => {
 
     return (
         <Fragment >
-
-            <div className={classes} >
+            <button className={classes} >
                 <ion-icon name={name} size={size} className="addIcon" aria-label="Add-Icon"></ion-icon>
-            </div>
+            </button>
 
         </Fragment>
     )

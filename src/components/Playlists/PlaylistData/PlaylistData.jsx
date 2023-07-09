@@ -5,7 +5,7 @@ const PlaylistData = [
         alt: "Playlist one",
         musicCount: "5",
         streamCount: "9k",
-        commentCount: "5k",
+        duplicateCount: "5k",
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const PlaylistData = [
         alt: "Playlist two",
         musicCount: "12",
         streamCount: "80",
-        commentCount: "33",
+        duplicateCount: "33",
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const PlaylistData = [
         alt: "Playlist three",
         musicCount: "4",
         streamCount: "89",
-        commentCount: "122",
+        duplicateCount: "122",
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const PlaylistData = [
         alt: "Playlist four",
         musicCount: "25",
         streamCount: "9k",
-        commentCount: "5k",
+        duplicateCount: "5k",
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const PlaylistData = [
         alt: "Playlist five",
         musicCount: "5",
         streamCount: "9k",
-        commentCount: "5k",
+        duplicateCount: "5k",
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const PlaylistData = [
         alt: "Playlist six",
         musicCount: "5",
         streamCount: "9k",
-        commentCount: "5k",
+        duplicateCount: "5k",
     },
 
 ]

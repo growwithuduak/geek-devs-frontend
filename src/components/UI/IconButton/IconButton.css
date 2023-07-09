@@ -4,7 +4,7 @@
     height: 30px;
     background-color: #FFBD59;
     border: none;
-    text-align: center;
+    padding: 0;
     top: -30px;
     right: -30px;
 }

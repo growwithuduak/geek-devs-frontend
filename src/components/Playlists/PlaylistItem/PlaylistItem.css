@@ -1,14 +1,13 @@
 .playlistCard {
-    /* display: flex; */
-    width: 50%;
-    height: 9em;
-    margin:10px;
-    padding: 15px;
+    width: 45%;
+    height: 8em;
+    margin: 10px;
+    padding: 5px;
     background: white;
     border: none;
     border-radius: 25px;
     position: relative;
-    
+    text-align: center;
 }
 
 .playlistIconButton {
@@ -20,18 +19,18 @@
 .playlistImage {
     width: 100px;
     height: 100px;
-    margin: 10px 20px 10px ;
+    margin-top: 5px;
 }
 
 .playlistDescription {
-    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px;
 }
 
 .playlistDescription .span {
     font-size: 20px;
 }
 
-.playlistCount {
-    margin-right: 5px;
-}
 

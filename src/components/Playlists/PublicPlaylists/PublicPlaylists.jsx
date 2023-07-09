@@ -14,7 +14,7 @@ const PublicPlaylists = (props) => {
             alt = {item.alt}
             musicCount = {item.musicCount}
             streamCount = {item.streamCount}
-            commentCount = {item.commentCount}
+            duplicateCount = {item.duplicateCount}
         />
 
     })
