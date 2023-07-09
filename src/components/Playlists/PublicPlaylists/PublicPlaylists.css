@@ -1,0 +1,16 @@
+.playlist-body {
+    width: 60%;
+    margin: 70px;
+    background-image: linear-gradient(to right,#CDFFD8, #94B9FF);
+}
+.playlist-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.playlist-heading {
+    text-align: center;
+    font-size: 1.9rem;
+
+}
