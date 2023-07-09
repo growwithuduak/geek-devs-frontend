@@ -1,13 +1,12 @@
 import './App.css'
-import { NavBar } from './components/NavBar/NavBar'
 
-import PublicPlaylists from './components/Playlists/PublicPlaylists/PublicPlaylists'
+import IconButton from './components/UI/IconButton/IconButton'
+
 
 function App() {
   return (
     <>
-      <NavBar />
-      <PublicPlaylists />
+      <IconButton name="add-outline" size="large"/>
     </>
   )
 }
