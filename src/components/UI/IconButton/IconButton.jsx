@@ -4,15 +4,19 @@ import PropTypes from 'prop-types';
 import "./IconButton.css";
 
 const IconButton = (props) => {
-    const {size, iconName, className} = props;
 
-    const classes = "iconButton " + className
-    
+    const {primary, iconName, iconSize, className} = props;
+
+    const mode = primary ? "icon-button--primary " : "null"
+
+    const classes = "icon-button " + `icon-button--${iconSize} ` +  mode + className
+
 
     return (
         <Fragment >
+
             <button className={classes} >
-                <ion-icon iconName={iconName} size={size} aria-label="Icon-Button"></ion-icon>
+                <ion-icon name={iconName} size={iconSize} aria-label="Icon-Button"></ion-icon>
             </button>
 
         </Fragment>
@@ -21,9 +25,14 @@ const IconButton = (props) => {
 }
 
 IconButton.propTypes = {
+    primary: PropTypes.bool.isRequired,
     iconName: PropTypes.string.isRequired,
-    size: PropTypes.string,
+    iconSize: PropTypes.string,
     className: PropTypes.string,
+}
+
+IconButton.defaultProps = {
+    iconSize: "large",
 }
 
 export default IconButton;

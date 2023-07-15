@@ -7,14 +7,14 @@ export default {
 };
 
 
-export const Primary = {
+export const Medium = {
     args: {
-        size: "medium",
+        iconSize: "medium",
     }
 }
 
-export const Secondary = {
+export const Large = {
     args: {
-        size: "large"
+        iconSize: "large"
     }
 }

@@ -2,13 +2,12 @@ import IconButton from "../IconButton";
 import {render, screen} from "@testing-library/react"
 
 
-// test is props renders
-// test if iconName is present
-// test if IconButton behaves as expected
+describe("Icon Button component", () => {
+    
+    it("renders icon name", () => {
+        render( <IconButton iconName="add-outline"/>)
+        expect().toBeInTheDocument()
+    })
 
-test("renders Icon Name successfully", () => {
-    render( <IconButton iconName = "add-outline" /> )
 
-
-    expect(screen.getByText(/"add-outline"/.i).toBeInTheDocument())
 })
