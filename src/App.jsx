@@ -1,10 +1,10 @@
 import './App.css'
-import Landing from './pages/Landing'
+import { NavBar } from './components/NavBar/NavBar'
 
 function App() {
   return (
     <>
-      <Landing />
+      <NavBar />
     </>
   )
 }

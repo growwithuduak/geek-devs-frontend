@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    height: 20px;
+
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+
+}
+.nav-items li {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.active {
+    border-bottom: 4px solid #5E17EB ;
+    cursor: pointer;
+}
+
+.nav-btn {
+    border: none;
+    background: none;
+}
