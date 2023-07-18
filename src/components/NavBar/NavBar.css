@@ -19,7 +19,14 @@
 }
 .nav-items li {
     margin-right: 1rem;
+    cursor: pointer;
 }
-.nav-items li:hover {
+.active {
     border-bottom: 4px solid #5E17EB ;
+    cursor: pointer;
+}
+
+.nav-btn {
+    border: none;
+    background: none;
 }
