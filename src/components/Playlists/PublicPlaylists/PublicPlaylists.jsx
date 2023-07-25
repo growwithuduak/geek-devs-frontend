@@ -23,9 +23,10 @@ const PublicPlaylists = (props) => {
         <Fragment >
             <div className="playlist-body">
                  <h4 className="playlist-heading">Public Playlists</h4>
-            <div className="playlist-card">
-                {Playlists}
-            </div>
+
+                <div className="playlist-card">
+                    {Playlists}
+                </div>
             </div>
            
         </Fragment>

@@ -1,16 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .playlist-body {
     width: 60%;
     margin: 70px;
     background-image: linear-gradient(to right,#CDFFD8, #94B9FF);
-}
-.playlist-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
+    font-family: "Arial sans";
 }
 
 .playlist-heading {
     text-align: center;
     font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 1034px) {
+
+    .playlist-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (min-width: 901px) {
+
+    .playlist-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .playlist-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
