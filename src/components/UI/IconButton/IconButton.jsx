@@ -15,8 +15,8 @@ const IconButton = (props) => {
     return (
         <Fragment >
 
-            <button className={classes} type="button">
-                <ion-icon name={iconName} size={iconSize} aria-label="Icon-Button"></ion-icon>
+            <button className={classes} type="button" data-testId="icon-button-tag">
+                <ion-icon name={iconName} size={iconSize} aria-label="Icon-Button" data-testId="icon-tag"></ion-icon>
             </button>
 
         </Fragment>

@@ -1,38 +1,31 @@
 import {render, screen} from "@testing-library/react"
+import '@testing-library/jest-dom'
+import '@testing-library/jest-dom/extend-expect';
+
+import React from "react"
 
 import IconButton from "../IconButton";
 
-test ( "should throw an error when button component has no named icon, named size and mode ", () => {
-    render (<IconButton />)
+test ( "IconButton when in primary mode should have expected class", () => {
+    const component = render( <IconButton primary iconName="add-outline" data-testid="icon1" /> )
+    const selectedMode = component.getByTestId("icon1")
+    
+    expect(selectedMode).toHaveClass("icon-button--primary")
 
 })
 
-test ( "should display button component in primary mode", () => {
-    render (<IconButton />)
+ 
 
-})
 
-test ( "should display primary button component with specific named icon", () => {
-    render (<IconButton />)
+// WHAT TO TEST IN ICONBUTTON.JSX
 
-})
+// should display button component in primary mode
+// should throw an error when button component has no named icon, named size and mode
 
-test ( "should display primary Icon button component with medium size ", () => {
-    render (<IconButton />)
+// should display primary button component with specific named icon
+// should display primary Icon button component with medium size
 
-})
+// should display primary Icon button component with large size
+// test ( "should throw an error when specific sized Icon button component is not in primary mode ", 
 
-test ( "should display primary Icon button component with large size ", () => {
-    render (<IconButton />)
-
-})
-
-test ( "should throw an error when specific sized Icon button component is not in primary mode ", () => {
-    render (<IconButton />)
-
-})
-
-test ( "should throw an error when primary Icon button component has no specific size ", () => {
-    render (<IconButton />)
-
-})
+// test ( "should throw an error when primary Icon button component has no specific size ",
