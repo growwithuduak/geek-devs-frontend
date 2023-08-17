@@ -1,4 +1,4 @@
-import {render, screen} from "@testing-library/react"
+import {render, screen} from "@testing-library/react";
 import '@testing-library/jest-dom'
 import '@testing-library/jest-dom/extend-expect';
 
@@ -7,15 +7,14 @@ import React from "react"
 import IconButton from "../IconButton";
 
 test ( "IconButton when in primary mode should have expected class", () => {
-    const component = render( <IconButton primary iconName="add-outline" data-testid="icon1" /> )
-    const selectedMode = component.getByTestId("icon1")
+    const component = render( <IconButton primary iconName="add-outline" iconSize="large" /> )
+    const selectedMode = component.getByRole("button")
     
     expect(selectedMode).toHaveClass("icon-button--primary")
 
 })
 
  
-
 
 // WHAT TO TEST IN ICONBUTTON.JSX
 
