@@ -1,10 +1,10 @@
-import './App.css'
-import Landing from './pages/Landing'
+import IconButton from './components/UI/IconButton/IconButton'
+
 
 function App() {
   return (
     <>
-      <Landing />
+      <IconButton iconName="add-outline" iconSize="large" primary />
     </>
   )
 }
