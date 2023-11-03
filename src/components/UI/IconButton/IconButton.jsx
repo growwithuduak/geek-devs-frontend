@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
 import PropTypes from 'prop-types';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import "./IconButton.css";
 
 
@@ -17,11 +15,8 @@ const IconButton = (props) => {
 
     return (
         <Fragment >
-            
-            <p>This is an icon <FontAwesomeIcon icon="fa-light fa-plus" style={{color: "#000000",}} /></p>
 
-            <button className={classes} type="button" >
-                
+            <button className={classes} type="button" >   
                 <ion-icon name={iconName} size={iconSize} aria-label="Icon-Button" ></ion-icon>
             </button>
 
